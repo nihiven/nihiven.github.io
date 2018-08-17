@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-62662107-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>Breadth, then Depth | Vapor Story</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Game DesignOne new edict: Breadth, then depth.Basically, avoid getting stuck in paralysis analysis hell. I’m going to make a concerted effort to make things work only as much as I need them to. Once a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Breadth, then Depth">
+<meta property="og:url" content="http://nvn.io/2017/12/14/Breadth-then-Depth/index.html">
+<meta property="og:site_name" content="Vapor Story">
+<meta property="og:description" content="Game DesignOne new edict: Breadth, then depth.Basically, avoid getting stuck in paralysis analysis hell. I’m going to make a concerted effort to make things work only as much as I need them to. Once a">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-02-13T00:30:27.712Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Breadth, then Depth">
+<meta name="twitter:description" content="Game DesignOne new edict: Breadth, then depth.Basically, avoid getting stuck in paralysis analysis hell. I’m going to make a concerted effort to make things work only as much as I need them to. Once a">
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;GlitchRockGames">
+  
+    <link rel="alternate" href="/atom.xml" title="Vapor Story" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://nvn.io/img/dogeminer.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <!--<div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Vapor Story</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">We come for your loot.</a>
+        </h2>
+      
+    </div>-->
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="http://nvn.io/work.txt">Work</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-twitter-link" class="nav-icon" href="https://twitter.com/GlitchRockGames" title="@GlitchRockGames"></a>
+        
+        
+          <a id="nav-insta-link" class="nav-icon" href="https://www.instagram.com/glitchrockgames/" title="GlitchRock Games on Instagram"></a>
+        
+        
+          <a id="nav-github-link" class="nav-icon" href="https://github.com/nihiven/" title="nihiven on github"></a>
+        
+        
+          <a id="nav-trello-link" class="nav-icon" href="https://trello.com/b/eEdlGHwV" title="Our work on Trello"></a>
+        
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://nvn.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Breadth-then-Depth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/14/Breadth-then-Depth/" class="article-date">
+  <time datetime="2017-12-15T00:28:24.000Z" itemprop="datePublished">2017-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Breadth, then Depth
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Game Design</strong><br>One new edict: <strong>Breadth, then depth.</strong><br>Basically, avoid getting stuck in paralysis analysis hell. I’m going to make a concerted effort to make things work only as much as I need them to. Once a component is established and has gone beyond the design stage, I can start implementing new features. Don’t wax your car if it hasn’t been put together yet!</p>
+<p><strong>Technical Design</strong><br>I was pumped up to start coding today. The little breakthrough I had last night helped boost my hype levels way up, so I started working on an input component, which brought the hype back down to earth. This component will allow the game to read button presses, trigger pulls, stick moves, etc, from the gamepad, as well as determine if states have changed since the last Update() tick. Playing around with input brought about the need to draw some text on the screen, so I began on the Debug component too. Today is the first (of what I’m sure will be many) days where I will be shutting down with a project that fails to build.</p>
+<p>I’ve been spending a lot of time reading about game design, here are some of the things I read today, number three will bring tears to your eyes!</p>
+<ul>
+<li>An online book, <a href="http://gameprogrammingpatterns.com/component.html" target="_blank" rel="noopener">Game Programming Patterns</a>, has a informative chapter the explores some ways to decouple your game components.</li>
+<li>This <a href="https://gamedev.stackexchange.com/a/24301" target="_blank" rel="noopener">answer on stackoverflow</a> that goes into why using the same texture is important when calling SpriteBatch is good. It makes me think about the right way to group sprite within spritesheets.</li>
+<li>If you want to put all of those cores in your new Ryzen to use, <a href="https://www.codeproject.com/Articles/7933/Smart-Thread-Pool" target="_blank" rel="noopener">Smart Thread Pools</a> are a way you can do that.</li>
+<li>The <a href="https://www.redblobgames.com/" target="_blank" rel="noopener">Red Blob Games blog</a> has some great articles on various game programming topics.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nvn.io/2017/12/14/Breadth-then-Depth/" data-id="cjkyf0kza0009f7a99qwn2xx8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/12/15/A-Day-Off/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          A Day Off
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/13/River-City-Ransom/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">River City Ransom</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/art-design/">art design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/article/">article</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/botw/">botw</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/concept/">concept</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/construct/">construct</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/destiny/">destiny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/doom/">doom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dream/">dream</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/engine/">engine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/holiday/">holiday</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/irl/">irl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/items/">items</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lowpoly/">lowpoly</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magica-voxel/">magica voxel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monogame/">monogame</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/quake/">quake</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shader/">shader</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/story/">story</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unity/">unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unreal/">unreal</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vapor/">vapor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/voxel/">voxel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/website/">website</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/art-design/" style="font-size: 10px;">art design</a> <a href="/tags/article/" style="font-size: 10px;">article</a> <a href="/tags/botw/" style="font-size: 11.67px;">botw</a> <a href="/tags/concept/" style="font-size: 10px;">concept</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/design/" style="font-size: 16.67px;">design</a> <a href="/tags/destiny/" style="font-size: 11.67px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/dream/" style="font-size: 10px;">dream</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/gamemaker/" style="font-size: 18.33px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 11.67px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/items/" style="font-size: 10px;">items</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11.67px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/quake/" style="font-size: 10px;">quake</a> <a href="/tags/shader/" style="font-size: 11.67px;">shader</a> <a href="/tags/story/" style="font-size: 10px;">story</a> <a href="/tags/unity/" style="font-size: 11.67px;">unity</a> <a href="/tags/unreal/" style="font-size: 15px;">unreal</a> <a href="/tags/vapor/" style="font-size: 10px;">vapor</a> <a href="/tags/video/" style="font-size: 18.33px;">video</a> <a href="/tags/voxel/" style="font-size: 10px;">voxel</a> <a href="/tags/website/" style="font-size: 13.33px;">website</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/08/17/Nah-man-it-s-August/">Nah man, it&#39;s August</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/01/Still-Alive/">Still Alive?</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/20/Destiny-2/">Destiny 2</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/27/That-s-all-we-ve-done/">That&#39;s all we&#39;ve done?</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/23/Poopin-and-Swoopin/">Poopin&#39; and Swoopin&#39;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 <a href="http://twitter.com/GlitchRockGames/" target="_blank">GlitchRock Games</a> | Come for the story, stay for the loot.
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="http://nvn.io/work.txt" class="mobile-nav-link">Work</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
