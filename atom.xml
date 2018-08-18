@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2018-08-17T20:15:47.537Z</updated>
+  <updated>2018-08-18T17:16:55.009Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GlitchRock Logo</title>
+    <link href="http://nvn.io/2018/08/18/GlitchRock-Logo/"/>
+    <id>http://nvn.io/2018/08/18/GlitchRock-Logo/</id>
+    <published>2018-08-18T15:41:01.000Z</published>
+    <updated>2018-08-18T17:16:55.009Z</updated>
+    
+    <content type="html"><![CDATA[<p>I’m working on a logo for GlitchRock Games. I want something that is simple and kind of retro, recognizable, and related to the GlitchRock name in literal way. I like the idea of this simple outline of a rock. The original GlitchRock was taken from a game screenshot, Call of Duty or something like that. The idea of having it glitched out is kind of cool. I can see the simple rock being a good watermark, but as a logo, it’s missing something. Will anyone know what it is unless it’s used in conjuction with the name? Maybe it needs some shading or something.</p><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><img src="/images/TheOriginalGlitchRock.png" alt="OG GlitchRock"></td><td><img src="/images/theRock.png" alt="Your basic GlitchRock"></td><td><img src="/images/GlitchRock-glitchy.png" alt="Glitchy GlitchRock"></td></tr></tbody></table><div align="center"><img src="/images/bigLogo.png" alt="Sample Logo Card"></div><br>&nbsp;<br><hr><br><br><strong>ArtStation</strong><br><a href="http://artstation.com" target="_blank" rel="noopener">ArtStation</a> is a site where profession artists post portfolios of their work. There is so much amazing there. I made <a href="https://www.artstation.com/nihiven/collections/362611" target="_blank" rel="noopener">a collection of inspirationl pictures</a> for Vapor Story. These all have some element of asthetic I want. A lot of the artists on this site are available for hire. I need to start saving my pennies.<br><br><div align="center"><img src="https://cdnb.artstation.com/p/assets/images/images/004/547/073/large/jugoslav-stankin-cyberpunkish.jpg?1484493821" alt="New retro wave-ish city"></div><br><div align="center"><img src="https://cdnb.artstation.com/p/assets/images/images/009/644/353/large/daniele-caviglia-scifi-city-post.jpg?1520117039" alt="ｃｉｔｙ_ｓｃｅｎｅ"></div><br><div align="center"><img src="https://cdna.artstation.com/p/assets/images/images/012/389/894/large/eugenio-garcia-villarreal-hh.jpg?1534536864" alt="Cyberpunk 2025"></div><br><div align="center"><img src="https://cdna.artstation.com/p/assets/images/images/007/082/334/large/vera-lee-disgusting.jpg?1503542272" alt="Wild World"></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’m working on a logo for GlitchRock Games. I want something that is simple and kind of retro, recognizable, and related to the GlitchRoc
+      
+    
+    </summary>
+    
+      <category term="glitchrock games" scheme="http://nvn.io/categories/glitchrock-games/"/>
+    
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
+    
+  </entry>
   
   <entry>
     <title>Nah man, it&#39;s August</title>
@@ -39,9 +68,9 @@
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="website" scheme="http://nvn.io/tags/website/"/>
-    
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
+    
+      <category term="website" scheme="http://nvn.io/tags/website/"/>
     
   </entry>
   
@@ -99,15 +128,15 @@
     <link href="http://nvn.io/2018/04/27/That-s-all-we-ve-done/"/>
     <id>http://nvn.io/2018/04/27/That-s-all-we-ve-done/</id>
     <published>2018-04-27T18:56:05.000Z</published>
-    <updated>2018-08-17T18:56:31.458Z</updated>
+    <updated>2018-08-18T17:47:36.660Z</updated>
     
-    <content type="html"><![CDATA[<p>It’s a been an unproductive week at GlitchRock Games. I suffer from anxiety/migraines and neither of them have been very kind to me this week. I’ve lost the whole week to them. I’m working as much as I can today and hopefully will be back at full steam tomorrow. In the last few sessions, I’ve worked on sorting out the inventory, tweaking some things here and there, and making some changes to make it feel a lot like the system from Diablo 3. I’m doing stacking a little differently, but aside from that, it’s very similar.</p><p>I’m going to take a little time to work on character movement now. It feels sluggish and boring. Adding a nice effect to the dash and tweaking the collision code will make it feel a lot more solid and responsive. This will tie in to adding the controller as an input device. Right now, you can only move with the keyboard and mouse. The input system is made up off two layers; input reading and action mapping. The input module reads all available inputs and maps them to a given action, which will eventually be assigned through the Input Configuration menu. An input to action mapping looks something like: action_map[action.attack] = input.mb_left;</p><p>This type of mapping lets me reference the actions in the game code, instead of specific keys. It’s a common technique and allows for user control customization. I’m a big fan of customization and options, so I’m working on exposing as many options as is appropriate.</p><p>ps. I stole the screen shake code that I used in Poopin in Swoopin and made it an object in Vapor Story.</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>It’s a been an unproductive week at GlitchRock Games. I suffer from anxiety/migraines and neither of them have been very kind to me this week. I’ve lost the whole week to them. I’m working as much as I can today and hopefully will be back at full steam tomorrow. In the last few sessions, I’ve worked on sorting out the inventory, tweaking some things here and there, and making some changes to make it feel a lot like the system from Diablo 3. I’m doing stacking a little differently, but aside from that, it’s very similar.</p><p>I’m going to take a little time to work on character movement now. It feels sluggish and boring. Adding a nice effect to the dash and tweaking the collision code will make it feel a lot more solid and responsive. This will tie in to adding the controller as an input device. Right now, you can only move with the keyboard and mouse. The input system is made up off two layers; input reading and action mapping. The input module reads all available inputs and maps them to a given action, which will eventually be assigned through the Input Configuration menu. An input to action mapping looks something like: action_map[action.attack] = input.mb_left;</p><p>This type of mapping lets me reference the actions in the game code, instead of specific keys. It’s a common technique and allows for user control customization. I’m a big fan of customization and options, so I’m working on exposing as many options as is appropriate.</p><p>ps. I stole the screen shake code that I used in Poopin in Swoopin and made it an object in Vapor Story.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;It’s a been an unproductive week at GlitchRock Games. I suffer from anxiety/migraines and neither of them have been very kind to me this 
+        &lt;p&gt;&lt;strong&gt;Technical Design&lt;/strong&gt;&lt;br&gt;It’s a been an unproductive week at GlitchRock Games. I suffer from anxiety/migraines and neither of
       
     
     </summary>
@@ -115,9 +144,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="design" scheme="http://nvn.io/tags/design/"/>
-    
       <category term="irl" scheme="http://nvn.io/tags/irl/"/>
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
@@ -142,9 +171,9 @@
       <category term="game jam" scheme="http://nvn.io/categories/game-jam/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="ludum dare" scheme="http://nvn.io/tags/ludum-dare/"/>
     
@@ -155,9 +184,9 @@
     <link href="http://nvn.io/2018/04/13/Friday-the-13th/"/>
     <id>http://nvn.io/2018/04/13/Friday-the-13th/</id>
     <published>2018-04-13T18:50:12.000Z</published>
-    <updated>2018-08-17T19:29:52.892Z</updated>
+    <updated>2018-08-18T17:46:01.011Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Notes</strong><br>I’ve gotten the inventory working somewhat. There is a video of that down below. There is also a world clock, which is used to cycle day night coloring. It’s just a simple overlay now, I’m not even sure the game will have day and night.</p><p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/7ni2n/uuejom" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div></p><p><div align="center"><img src="/images/jv.gif" alt="YES!"></div><br>&nbsp;</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Notes</strong><br>I’ve gotten the inventory working somewhat. There is a video of that down below. There is also a world clock, which is used to cycle day night coloring. It’s just a simple overlay now, I’m not even sure the game will have day and night.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/7ni2n/uuejom" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><br><div align="center"><img src="/images/jv.gif" alt="YES!"></div>]]></content>
     
     <summary type="html">
     
@@ -171,9 +200,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -186,7 +215,7 @@
     <link href="http://nvn.io/2018/04/08/Spaghetti-Code/"/>
     <id>http://nvn.io/2018/04/08/Spaghetti-Code/</id>
     <published>2018-04-08T18:46:28.000Z</published>
-    <updated>2018-08-17T19:10:23.275Z</updated>
+    <updated>2018-08-18T17:49:58.027Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Techinical Design</strong><br>This weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just kind of throwing code all over the place. Some of it is getting a bit wild and is all over the place. I’m taking some time to reel those parts in, as well as correcting and expanding on some things;<br>naming of variables and scripts, including tree locations</p><ul><li>collision: this hasn’t worked correctly since I changed the main character sprite</li><li>data structure: I am making objects for each item and that’s not working out. I’m going to set up an item index and build objects based on the index data instead of building the data into the objects. I’ll have to think about how code works for unqiue items.</li><li>animation: it’s working ok as is. It needs a little more flexibility for layering items on top of each other. I want to setup parts for characters (head, torso, legs, etc…) and be able to assign items to those parts.</li><li>drawing: I need to make a system to control drawing order. The sprites are drawn in whatever order Game Maker draws them in. This leads to some items being drawn on top of things they shouldn’t be. I need keep a depth order and draw based on that.</li></ul><p>I’m not going to beat myself up over these thinsg, I’ll look at it as learning the ropes of Game Maker. Also, I’m pretty happy with the way input is handled and abstracted. The extra time spent on that will allow for custom input mapping and it’s easy to use in code.</p><p><strong>Game Design</strong><br>I’m playing through Breath of the Wild on Master Mode. There are times when I’m totally ignoring the story or any quest and I just go around in my stealth gear collecting beetles. This is the kind of activity I want to have in my game. Something that is fun and beneficial to the player, despite being totally optional. I would love for the players to be able to take pictures, or something with a similar purpose (tagging different game objects). I’m thinking about that a lot.</p><p>The story is still a work in progress. I aim for it to be something that can stand alone and be enjoyable on its own. I like it a lot so far.</p><p>This is a picture of the inventory window. The dark gray slots are disabled and can be unlocked through perks or experience.<br><img src="/images/180408-Inventory.png" alt="Inventory Window"></p><p>ps. <a href="https://www.gamasutra.com/view/feature/134949/learning_from_the_masters_level_.php" target="_blank" rel="noopener">This article on The Legend of Zelda level design</a> is pretty good!</p>]]></content>
     
@@ -202,15 +231,15 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="design" scheme="http://nvn.io/tags/design/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
@@ -236,9 +265,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -302,7 +331,7 @@
     <link href="http://nvn.io/2018/03/26/Item-Popups/"/>
     <id>http://nvn.io/2018/03/26/Item-Popups/</id>
     <published>2018-03-26T18:12:22.000Z</published>
-    <updated>2018-08-17T18:13:04.375Z</updated>
+    <updated>2018-08-18T17:52:33.938Z</updated>
     
     <content type="html"><![CDATA[<p>Stopping in to drop off a video of the item popups!</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/e6h18/nxmebw" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>]]></content>
     
@@ -321,7 +350,7 @@
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
-      <category term="items" scheme="http://nvn.io/tags/items/"/>
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
   </entry>
   
@@ -330,9 +359,9 @@
     <link href="http://nvn.io/2018/03/18/Camera-Perspective/"/>
     <id>http://nvn.io/2018/03/18/Camera-Perspective/</id>
     <published>2018-03-18T18:03:51.000Z</published>
-    <updated>2018-08-17T19:10:08.893Z</updated>
+    <updated>2018-08-18T17:48:27.904Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>Holy hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Maker works and what’s possible. I did something with the background sky that’s been behind the buildings in many of the videos below, replacing it with a shader instead of a texture. It works really well. If the shader was some type of cloudy sky, it would look a lot like the sky in Breath of the Wild, which is definitely a dynamic shader. Something a lot like this…</p><iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/Mtd3W7?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe><p><strong>Game Design</strong><br>One of the problems I’m having is how to handle the camera perspective. Think of a first or third person game, when the camera is low to the ground and you can see off into the distance. When the camera is high, you are above the player, staring down at the ground. These pictures illustrate the difference. These are all pictures of the same scene, with only the camera’s height changing.</p><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><img src="/images/botwLowCamera.jpg" alt="Directly Behind"></td><td><img src="/images/botwMedCamera.png" alt="Behind High"></td><td><img src="/images/botwHighCamera.png" alt="Overhead"></td></tr></tbody></table><p>In my opinion, the first one looks the best and the third the worst. My game is a top down game, which is a lot like the third picture. My dilemma is: How do I make something that looks more like the first picture, than it does the third? The awesome feeling that I get from being able to stand atop a big mountain and look out over the landscape can’t be overstated. I don’t know that it’s possible to replicate that feeling in a 2d world though. In an attempt to replicate the low camera look, you can zoom out, which will increase the field of view. This relieves some of the claustraphobic feeling from the third picture. If that view was zoomed out, allowing you to see the sorroundings, it would be a little more playable. I tried this with my protoype and zoomed the camera out around 100%. It gives a much larger field of view and feels a little more substantial, which you can see in the video below.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/3sotf/doaahy" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><p>I’m going to keep experimenting. I’ll check out some other games to see how they handle it, as I’m sure someone already has a great solution.</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>Holy hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Maker works and what’s possible. I did something with the background sky that’s been behind the buildings in many of the videos below, replacing it with a shader instead of a texture. It works really well. If the shader was some type of cloudy sky, it would look a lot like the sky in Breath of the Wild, which is definitely a dynamic shader. Something a lot like this…</p><iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/Mtd3W7?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe><p><strong>Game Design</strong><br>One of the problems I’m having is how to handle the camera perspective. Think of a first or third person game, when the camera is low to the ground and you can see off into the distance. When the camera is high, you are above the player, staring down at the ground. These pictures illustrate the difference. These are all pictures of the same scene, with only the camera’s height changing.</p><table><tbody><tr><td><img src="/images/botwLowCamera.jpg" alt="Directly Behind"></td><td><img src="/images/botwMedCamera.png" alt="Behind High"></td><td><img src="/images/botwHighCamera.png" alt="Overhead"></td></tr></tbody></table><p>In my opinion, the first one looks the best and the third the worst. My game is a top down game, which is a lot like the third picture. My dilemma is: How do I make something that looks more like the first picture, than it does the third? The awesome feeling that I get from being able to stand atop a big mountain and look out over the landscape can’t be overstated. I don’t know that it’s possible to replicate that feeling in a 2d world though. In an attempt to replicate the low camera look, you can zoom out, which will increase the field of view. This relieves some of the claustraphobic feeling from the third picture. If that view was zoomed out, allowing you to see the sorroundings, it would be a little more playable. I tried this with my protoype and zoomed the camera out around 100%. It gives a much larger field of view and feels a little more substantial, which you can see in the video below.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/3sotf/doaahy" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><p>I’m going to keep experimenting. I’ll check out some other games to see how they handle it, as I’m sure someone already has a great solution.</p>]]></content>
     
     <summary type="html">
     
@@ -346,17 +375,19 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="design" scheme="http://nvn.io/tags/design/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="shader" scheme="http://nvn.io/tags/shader/"/>
+    
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
@@ -381,9 +412,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="shader" scheme="http://nvn.io/tags/shader/"/>
     
@@ -419,7 +450,7 @@
     <link href="http://nvn.io/2018/03/12/Little-Light/"/>
     <id>http://nvn.io/2018/03/12/Little-Light/</id>
     <published>2018-03-12T17:51:00.000Z</published>
-    <updated>2018-08-17T17:58:37.814Z</updated>
+    <updated>2018-08-18T17:51:20.369Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>GameMaker really works well when it comes to reuseability. I will code something directly on the player object, the code to initialize the sound emitters for instance, then refactor that code into a function that accepts the target object as a parameter. This isn’t groundbreaking or anything. The great part is the way GameMaker facilitates this type of design and makes it easy to do. It agrees with my style very much.</p><p>Let’s get to some specific things I’m working on…</p><p><strong>The Player</strong><br>The main character was originally written as a guy like me named Elliot Ever. However, this quickly lead to me referring to the world as the Eververse, which is not good. I’m not sure what to name him now. I was thinking of letting the player name the character and not referring to the character by any specific gender. This way, the person playing the game can pour themself into the main character container and not feel out of place. I’d like anyone to be able to imagine that if they were put in the hero’s place, they could fill the role very well!</p><p>Not having a specific character to work with got me thinking about the hero’s interactions with other characters in the game. How would a hero with no personality decide what to say, what to do? So I decided to give the hero a personality type, akin to how the hero is defined in Just Cause 3. Rico Rodriguez has a very well defined personality and set of needs.</p><blockquote><p>“The child of one thousand comic books and action movies. He is James Bond, Mad Max, Jason Bourne, El Mariachi, Wolverine, Punisher, Rambo, Tony Montana and Han Solo all rolled into one. With a touch of Enrique Iglesias to top it all off!”</p></blockquote><p>I’ve thought about giving the hero a personality that is loosely based on one of the Myers-Briggs types, speficially, INTP. That’s probably where I will start as far as interactions go.</p><p><strong>Little Buddy</strong><br>I wanted to have a buddy companion for the player. Think, Destiny’s Ghost, Halo’s Cortana, or System Shock’s SHODAN. I picture the companion traveling with the player like the Ghost, giving the player real-time augmented reality feedback. For instance, when you walk up to an NPC, the companion will display the active quests involving that NPC. How or where these would be displayed is unknown.</p><p>GameMaker works in such a way that I will code the logic for these augmented reality components into the companion’s game object. They will activate and deactivate based soley on the Ghost’s presence in the world and will operate entirely independent of any other object in the game. The ghost requires a follow target, in our case it’s the player. From that follow object, the ghost gets the viewport and uses that to display its augmented reality information. You could attach it to any object with an active viewport and it would display its information correctly.</p><p>I liked the Ghost idea until I played Hyper Light Drifter and saw their Ghost. That game already has so many similarities to mine that adding a ghost just seems like it will invite even more comparison. Part of me doesn’t care about the similarities. I’ve known about the type of game I want to make for 10 years and that’s what I’m going to make. Another part of me says, get rid of the ghost, get rid of the work required to make the ghost. I’m leaning towards an in-ear companion, much like <a href="http://enderverse.wikia.com/wiki/Jane" target="_blank" rel="noopener">Jane</a> from the Ender book, “<a href="https://en.wikipedia.org/wiki/Speaker_for_the_Dead" target="_blank" rel="noopener">Speaker for the Dead</a>.”</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 117.647%;"><iframe src="https://streamable.com/s/lewkw/wflejq" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;" alt="Samus"></iframe></div><p><strong>The Game World</strong><br><strong>Earth</strong><br>This has been tough for me. I want so badly to integrate unexplained real world events into my story, explaining them as consequences of the game’s events. It just doesn’t seem like it’s going to line up. I will take another pass at it though, I really enjoyed writing those parts of the story.</p><p><strong>Roma</strong><br>The ‘alien’ world is called Roma in everything I’ve written. Inhabited by Romans, which aren’t from Romania. They are ‘robotic human.’ Not really robotic at all, but that’s how we can understand them from our frame of reference.</p><p><strong>Romans</strong><br>They are a lot like we could be a few hundred years from now. Their planet is dying and has recently reach the tipping point. They disregarded any concern for the planet because they had an extremely advanced space program. It was very nearly ready to support a full blown planet-wide emigration when they were attacked on a global scale. The assailant, an alien race that frequented the Solar system, was thought to be an ally and attacked with little resistance. By the time the Romans were able to respond, the war had already been lost. The Romans presence in space was nearly wiped out when the capital spaceport, Porta De Ceu, was totally destroyed. Millions died in the unprovoked attack.</p><p><strong>Collusion and the Altayih</strong><br>Once the dust had settled from the invasion, It was found that many Romans had colluded with the Altayih to ensure the effectiveness of the attack. These traitors, known as Tamurins, were critical to the Altayin’s understanding of the Roman defenses, helping to detail and map out the Roman response to the surprise attack. The Roman’s faith and trust in the Altayih was mirrored by the Tamurins, and they too were betrayed. The Tamurins were promised positions of power once the Romans were conquered, but few survived the attacks and many were executed by their co-conspirators. Within a few weeks, the Altayin’s had taken control of every one of the Romans offworld mines. They enslaved the inhabitants of the mining colonies and eventually worked many of the colonists to death. It turned out that the Altayih had no desire to conquer the Romans and were merely doing what had to be done to collect as many resources as they could. After a few decades, the Altayih moved on to a new system.</p><p>This goes on and on…</p>]]></content>
     
@@ -435,11 +466,17 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="design" scheme="http://nvn.io/tags/design/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
+      <category term="destiny" scheme="http://nvn.io/tags/destiny/"/>
+    
       <category term="story" scheme="http://nvn.io/tags/story/"/>
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
@@ -465,9 +502,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -495,9 +532,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="magica voxel" scheme="http://nvn.io/tags/magica-voxel/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="magica voxel" scheme="http://nvn.io/tags/magica-voxel/"/>
     
   </entry>
   
@@ -506,16 +543,17 @@
     <link href="http://nvn.io/2018/03/03/The-Magica-Voxels/"/>
     <id>http://nvn.io/2018/03/03/The-Magica-Voxels/</id>
     <published>2018-03-03T22:13:47.000Z</published>
-    <updated>2018-08-17T19:09:47.883Z</updated>
+    <updated>2018-08-18T17:52:03.106Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>I was spending some time in MagicaVoxel and started on some kind of diorama for the title.</p><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><img src="/images/voxVaporStory.png" alt="Flat" title="Flat"></td><td><img src="/images/voxVapor.png" alt="" title="Thin Outline"></td><td><img src="/images/voxVaporPersp.png" alt="Shaded 3D" title="Shaded 3D"></td></tr></tbody></table><p>Work in progres…</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Art Design</strong><br>I was spending some time in MagicaVoxel and started on some kind of diorama for the title.</p><table><tbody><tr><td><img src="/images/voxVaporStory.png" alt="Flat" title="Flat"></td><td><img src="/images/voxVapor.png" alt="" title="Thin Outline"></td><td><img src="/images/voxVaporPersp.png" alt="Shaded 3D" title="Shaded 3D"></td></tr></tbody></table><p>Work in progres…</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;Technical Design&lt;/strong&gt;&lt;br&gt;I was spending some time in MagicaVoxel and started on some kind of diorama for the title.&lt;/p&gt;
-&lt;tabl
+        &lt;p&gt;&lt;strong&gt;Art Design&lt;/strong&gt;&lt;br&gt;I was spending some time in MagicaVoxel and started on some kind of diorama for the title.&lt;/p&gt;
+&lt;table&gt;
+&lt;tb
       
     
     </summary>
@@ -523,7 +561,7 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="voxel" scheme="http://nvn.io/tags/voxel/"/>
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
       <category term="magica voxel" scheme="http://nvn.io/tags/magica-voxel/"/>
     
@@ -549,33 +587,6 @@
     
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Kick and Pitch</title>
-    <link href="http://nvn.io/2018/02/25/Kick-and-Pitch/"/>
-    <id>http://nvn.io/2018/02/25/Kick-and-Pitch/</id>
-    <published>2018-02-25T19:22:02.000Z</published>
-    <updated>2018-08-17T19:10:17.340Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>General Updates</strong><br>I made a few updates to the <a href="/inspiration/">Inspiration page</a>. I will be adding a Pitch page for the ‘Kickstarter’ presentation, which is basically an overview of the game I am making.</p><p>Here is a hunter from Destiny. I want to try some pixel art to make this a real character.<br><img src="/images/destinyHunter.png" alt="" title="Destiny: Female Hunter"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;General Updates&lt;/strong&gt;&lt;br&gt;I made a few updates to the &lt;a href=&quot;/inspiration/&quot;&gt;Inspiration page&lt;/a&gt;. I will be adding a Pitch pa
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
-      <category term="destiny" scheme="http://nvn.io/tags/destiny/"/>
     
   </entry>
   
