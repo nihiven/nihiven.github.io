@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2018-08-19T23:46:43.979Z</updated>
+  <updated>2018-08-22T03:10:51.145Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The TODO List</title>
+    <link href="http://nvn.io/2018/08/21/The-TODO-List/"/>
+    <id>http://nvn.io/2018/08/21/The-TODO-List/</id>
+    <published>2018-08-21T22:02:08.000Z</published>
+    <updated>2018-08-22T03:10:51.145Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Project Management</strong><br>I love lists. They keep me on track and they let me dump stuff out of my head so I have some room to think. Trello helps me make lists, so I love Trello and it’s simple and straight-forward design. I had more things to say about Trello, but I forget them before I could make a list.</p><div align="center"><img src="/images/trello-20180821.png" alt="The TODO List"></div><p><strong>Tech Design</strong><br>I’m building item pickup functionality, using the voxel Sleeper Simulant to test. Here are the object so far, each lower level object is a sub-class of the object above it:</p><ul><li>Pickup Primal<ul><li>Pickup Weapon Primal<ul><li>Pickup Weapon Sleeper Simulant</li></ul></li><li>Pickup Bonus Primal<ul><li>Pickup Bonus GloDots</li><li>Pickup Bonus Credits</li></ul></li><li>Pickup Ammo Primal<ul><li>Pickup Ammo Primary</li><li>Pickup Ammo Precision</li><li>Pickup Ammo Heavy</li></ul></li></ul></li></ul><p>Primal objects must be sub-classed. The <strong>Pickup Weapon Primal</strong> describes the weapon and defines available properties (reserve size, clip size, equip speed, mesh, icon, etc) and <strong>Pickup Weapon Sleeper Simulant</strong> defines the values for these properties. This is pretty standard <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank" rel="noopener">object-oriented programming</a>. The amazing part to me is how intuitive it is to implement this design within the Unreal engine. Here’s a sample of the Sleeper’s item popup:</p><table><tbody><tr><td><img src="/images/examiningSleeper.jpg" alt=""></td><td><img src="/images/examiningSleeper2.jpg" alt=""></td></tr></tbody></table><p>These entries always take me longer to write than I think they will. I’m going to do one every three days or so.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Project Management&lt;/strong&gt;&lt;br&gt;I love lists. They keep me on track and they let me dump stuff out of my head so I have some room 
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
+    
+      <category term="tech design. engine" scheme="http://nvn.io/tags/tech-design-engine/"/>
+    
+  </entry>
   
   <entry>
     <title>Pill Baxton</title>
@@ -499,9 +526,9 @@
     
       <category term="destiny" scheme="http://nvn.io/tags/destiny/"/>
     
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
-    
       <category term="story" scheme="http://nvn.io/tags/story/"/>
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
@@ -550,35 +577,6 @@
       
         &lt;p&gt;Here is the Vapor Board as viewed in Magica Voxel.&lt;/p&gt;
 &lt;div style=&quot;width: 100%; height: 0px; position: relative; padding-bottom: 68.966%;
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
-    
-      <category term="magica voxel" scheme="http://nvn.io/tags/magica-voxel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The Magica Voxels</title>
-    <link href="http://nvn.io/2018/03/03/The-Magica-Voxels/"/>
-    <id>http://nvn.io/2018/03/03/The-Magica-Voxels/</id>
-    <published>2018-03-03T22:13:47.000Z</published>
-    <updated>2018-08-18T17:52:03.106Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Art Design</strong><br>I was spending some time in MagicaVoxel and started on some kind of diorama for the title.</p><table><tbody><tr><td><img src="/images/voxVaporStory.png" alt="Flat" title="Flat"></td><td><img src="/images/voxVapor.png" alt="" title="Thin Outline"></td><td><img src="/images/voxVaporPersp.png" alt="Shaded 3D" title="Shaded 3D"></td></tr></tbody></table><p>Work in progres…</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;Art Design&lt;/strong&gt;&lt;br&gt;I was spending some time in MagicaVoxel and started on some kind of diorama for the title.&lt;/p&gt;
-&lt;table&gt;
-&lt;tb
       
     
     </summary>

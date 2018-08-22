@@ -77,6 +77,62 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-Twin-Peaks-and-Notes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/06/Twin-Peaks-and-Notes/" class="article-date">
+  <time datetime="2018-01-07T01:27:16.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/06/Twin-Peaks-and-Notes/">Twin Peaks and Notes</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Inspiration</strong><br>I’ve been reading <a href="https://www.amazon.com/Secret-History-Twin-Peaks-Novel/dp/1250075580" target="_blank" rel="noopener">The Secret History of Twin Peaks</a>, and it’s really amazing to me how Mark Frost is able to take the story of TP all the way back to the days of Lewis and Clark.</p>
+<blockquote>
+<p>A vastly layered, wide-ranging history that deepens the mysteries of the iconic town in ways that will thrill disciples of the original series and will prep fans for the upcoming SHOWTIME series like nothing else out there.</p>
+<p>Four original Twin Peaks cast members who are appearing in the new Twin Peaks for SHOWTIME - Kyle MacLachlan, Russ Tamblyn, Michael Horse, and David Patrick Kelly - join three new actors - Amy Shiels, Robert Knepper, and James Morrison - to voice the audiobook edition of the novel along with cocreator Mark Frost and original cast member Chris Mulkey.</p>
+</blockquote>
+<p><strong>Game Design</strong><br>I want to share some notes I’ve been keeping, just to show some things I’m looking at…</p>
+<blockquote><p><strong>Weapon Design</strong><br>Need to implement weapon states<br>if a weapon is reloading, call Reload()<br>if a weapon is firing, call Fire()<br>and; Idle(), Empty()</p>
+<p>Prevent having to set explicit timers for things by using the states, and tracking the amount of time spent in each state</p>
+<p><strong>Sound Effect Component</strong><br>Build a way to load a ‘sound bank’ which will be a group of related sounds. For example,<br>firing sounds for the SMG, would be one bank. Then, have a way to play a random sound from<br>an specified bank.</p>
+<p>During content load, individual weapon configuration files are read to create the weapon banks.</p>
+<p><strong>World Manager</strong><br>Some things to think about for world management…</p>
+<ol>
+<li>Do we need managers for related entities? ie; Items (drops, gear, weapons, mats), Projectiles (bullets, casts, bombs), Actors (player, enemies, NPCS)</li>
+<li>Is the world instanced or static? What do we get from either method?</li>
+<li>When do we start thinking about serialization?</li>
+</ol>
+<p><strong>Misc</strong><br>Size = how big something is or how many something can hold<br>Count = how many something currently has<br>ex:<br>MagSize = how many rounds a magazine can hold<br>MagCount = how many rounds a magazine currently holds</p>
+</blockquote>
+
+      
+      &nbsp;
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nvn.io/2018/01/06/Twin-Peaks-and-Notes/" data-id="cjl499tse003y0wa95j0dgtkk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-HUD-and-Pictures" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/03/HUD-and-Pictures/" class="article-date">
@@ -108,7 +164,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/01/03/HUD-and-Pictures/" data-id="cjl1hfvur000o2ga9sb2mr8r1" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/01/03/HUD-and-Pictures/" data-id="cjl499tqt00150wa9nahwj0ku" class="article-share-link">Share</a>
       
       
     </footer>
@@ -148,7 +204,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/28/Inventory/" data-id="cjl1hfvuw00152ga9lf1p26wu" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/28/Inventory/" data-id="cjl499tqw00190wa9q032em5h" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -191,7 +247,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/26/Item-Spawning/" data-id="cjl1hfvuy00182ga9tzfkg6qa" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/26/Item-Spawning/" data-id="cjl499tqx001c0wa9y9yivxpx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -230,7 +286,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/25/Merry-Christmas/" data-id="cjl1hfvv2001j2ga93wzgnfu2" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/25/Merry-Christmas/" data-id="cjl499tr1001l0wa9ldqin8sf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -285,7 +341,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/24/Dependency-Injection/" data-id="cjl1hfvuj000b2ga9ckmyuv3u" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/24/Dependency-Injection/" data-id="cjl499tqp000p0wa9qig6eok5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -328,7 +384,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/21/General-Updates/" data-id="cjl1hfvuu000z2ga9kqtyhinr" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/21/General-Updates/" data-id="cjl499tqq000t0wa95s2ihv1m" class="article-share-link">Share</a>
       
       
     </footer>
@@ -372,7 +428,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/18/Item-Factory/" data-id="cjl1hfvv0001e2ga9x5pgtf65" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/18/Item-Factory/" data-id="cjl499tr4001t0wa93i4l3md5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li></ul>
@@ -414,7 +470,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/17/No-Small-Steps/" data-id="cjl1hfvv6001u2ga9zckfwy0m" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/17/No-Small-Steps/" data-id="cjl499tr800230wa9k7uzgzu5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -456,46 +512,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/16/Input-Innnnnput/" data-id="cjl1hfvuv00112ga90irmnd54" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-A-Day-Off" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/15/A-Day-Off/" class="article-date">
-  <time datetime="2017-12-16T00:30:52.000Z" itemprop="datePublished">2017-12-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/15/A-Day-Off/">A Day Off</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Today is a scheduled off day for Element work, but I wanted mention that I’m bouncing around some names for the game. I haven’t thought of any good ones! I really don’t even like the code name ‘Element,’ so I’m going to change that eventually. Also, this site has moved to nvn.io and has been redesigned.</p>
-
-      
-      &nbsp;
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/15/A-Day-Off/" data-id="cjl1hfvtz00012ga93t7idjwk" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/16/Input-Innnnnput/" data-id="cjl499tqs00120wa96xo2044s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -521,7 +538,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/art-design/">art design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/article/">article</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/botw/">botw</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/construct/">construct</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/destiny/">destiny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/doom/">doom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/engine/">engine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/holiday/">holiday</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/irl/">irl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lowpoly/">lowpoly</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magica-voxel/">magica voxel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monogame/">monogame</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shader/">shader</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/story/">story</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tech-design/">tech design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unity/">unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unreal/">unreal</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/website/">website</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/art-design/">art design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/article/">article</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/botw/">botw</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/construct/">construct</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/destiny/">destiny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/doom/">doom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/engine/">engine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/holiday/">holiday</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/irl/">irl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lowpoly/">lowpoly</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magica-voxel/">magica voxel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monogame/">monogame</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shader/">shader</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/story/">story</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tech-design/">tech design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tech-design-engine/">tech design. engine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unity/">unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unreal/">unreal</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/website/">website</a></li></ul>
     </div>
   </div>
 
@@ -531,7 +548,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/art-design/" style="font-size: 15.71px;">art design</a> <a href="/tags/article/" style="font-size: 10px;">article</a> <a href="/tags/botw/" style="font-size: 11.43px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12.86px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/gamemaker/" style="font-size: 18.57px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 11.43px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11.43px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/shader/" style="font-size: 11.43px;">shader</a> <a href="/tags/story/" style="font-size: 10px;">story</a> <a href="/tags/tech-design/" style="font-size: 15.71px;">tech design</a> <a href="/tags/unity/" style="font-size: 11.43px;">unity</a> <a href="/tags/unreal/" style="font-size: 14.29px;">unreal</a> <a href="/tags/video/" style="font-size: 17.14px;">video</a> <a href="/tags/website/" style="font-size: 12.86px;">website</a>
+      <a href="/tags/art-design/" style="font-size: 15.71px;">art design</a> <a href="/tags/article/" style="font-size: 10px;">article</a> <a href="/tags/botw/" style="font-size: 11.43px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12.86px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/gamemaker/" style="font-size: 18.57px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 11.43px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11.43px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/shader/" style="font-size: 11.43px;">shader</a> <a href="/tags/story/" style="font-size: 10px;">story</a> <a href="/tags/tech-design/" style="font-size: 15.71px;">tech design</a> <a href="/tags/tech-design-engine/" style="font-size: 10px;">tech design. engine</a> <a href="/tags/unity/" style="font-size: 11.43px;">unity</a> <a href="/tags/unreal/" style="font-size: 14.29px;">unreal</a> <a href="/tags/video/" style="font-size: 17.14px;">video</a> <a href="/tags/website/" style="font-size: 12.86px;">website</a>
     </div>
   </div>
 
@@ -553,6 +570,10 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2018/08/21/The-TODO-List/">The TODO List</a>
+          </li>
+        
+          <li>
             <a href="/2018/08/19/Pill-Baxton/">Pill Baxton</a>
           </li>
         
@@ -566,10 +587,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2018/07/01/Still-Alive/">Still Alive?</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/20/Destiny-2/">Destiny 2</a>
           </li>
         
       </ul>
