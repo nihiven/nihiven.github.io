@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2018-08-22T03:10:51.145Z</updated>
+  <updated>2018-08-22T03:14:02.270Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://nvn.io/2018/08/21/The-TODO-List/"/>
     <id>http://nvn.io/2018/08/21/The-TODO-List/</id>
     <published>2018-08-21T22:02:08.000Z</published>
-    <updated>2018-08-22T03:10:51.145Z</updated>
+    <updated>2018-08-22T03:14:02.270Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Project Management</strong><br>I love lists. They keep me on track and they let me dump stuff out of my head so I have some room to think. Trello helps me make lists, so I love Trello and it’s simple and straight-forward design. I had more things to say about Trello, but I forget them before I could make a list.</p><div align="center"><img src="/images/trello-20180821.png" alt="The TODO List"></div><p><strong>Tech Design</strong><br>I’m building item pickup functionality, using the voxel Sleeper Simulant to test. Here are the object so far, each lower level object is a sub-class of the object above it:</p><ul><li>Pickup Primal<ul><li>Pickup Weapon Primal<ul><li>Pickup Weapon Sleeper Simulant</li></ul></li><li>Pickup Bonus Primal<ul><li>Pickup Bonus GloDots</li><li>Pickup Bonus Credits</li></ul></li><li>Pickup Ammo Primal<ul><li>Pickup Ammo Primary</li><li>Pickup Ammo Precision</li><li>Pickup Ammo Heavy</li></ul></li></ul></li></ul><p>Primal objects must be sub-classed. The <strong>Pickup Weapon Primal</strong> describes the weapon and defines available properties (reserve size, clip size, equip speed, mesh, icon, etc) and <strong>Pickup Weapon Sleeper Simulant</strong> defines the values for these properties. This is pretty standard <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank" rel="noopener">object-oriented programming</a>. The amazing part to me is how intuitive it is to implement this design within the Unreal engine. Here’s a sample of the Sleeper’s item popup:</p><table><tbody><tr><td><img src="/images/examiningSleeper.jpg" alt=""></td><td><img src="/images/examiningSleeper2.jpg" alt=""></td></tr></tbody></table><p>These entries always take me longer to write than I think they will. I’m going to do one every three days or so.</p>]]></content>
     
@@ -37,9 +37,11 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
-      <category term="tech design. engine" scheme="http://nvn.io/tags/tech-design-engine/"/>
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
