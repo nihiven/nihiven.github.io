@@ -77,10 +77,66 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-Spaghetti-Code" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/08/Spaghetti-Code/" class="article-date">
+  <time datetime="2018-04-08T19:46:28.000Z" itemprop="datePublished">2018-04-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/vapor-game/">vapor game</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/08/Spaghetti-Code/">Spaghetti Code</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Techinical Design</strong><br>This weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just kind of throwing code all over the place. Some of it is getting a bit wild and is all over the place. I’m taking some time to reel those parts in, as well as correcting and expanding on some things;<br>naming of variables and scripts, including tree locations</p>
+<ul>
+<li>collision: this hasn’t worked correctly since I changed the main character sprite</li>
+<li>data structure: I am making objects for each item and that’s not working out. I’m going to set up an item index and build objects based on the index data instead of building the data into the objects. I’ll have to think about how code works for unqiue items.</li>
+<li>animation: it’s working ok as is. It needs a little more flexibility for layering items on top of each other. I want to setup parts for characters (head, torso, legs, etc…) and be able to assign items to those parts.</li>
+<li>drawing: I need to make a system to control drawing order. The sprites are drawn in whatever order Game Maker draws them in. This leads to some items being drawn on top of things they shouldn’t be. I need keep a depth order and draw based on that.</li>
+</ul>
+<p>I’m not going to beat myself up over these thinsg, I’ll look at it as learning the ropes of Game Maker. Also, I’m pretty happy with the way input is handled and abstracted. The extra time spent on that will allow for custom input mapping and it’s easy to use in code.</p>
+<p><strong>Game Design</strong><br>I’m playing through Breath of the Wild on Master Mode. There are times when I’m totally ignoring the story or any quest and I just go around in my stealth gear collecting beetles. This is the kind of activity I want to have in my game. Something that is fun and beneficial to the player, despite being totally optional. I would love for the players to be able to take pictures, or something with a similar purpose (tagging different game objects). I’m thinking about that a lot.</p>
+<p>The story is still a work in progress. I aim for it to be something that can stand alone and be enjoyable on its own. I like it a lot so far.</p>
+<p>This is a picture of the inventory window. The dark gray slots are disabled and can be unlocked through perks or experience.<br><img src="/images/180408-Inventory.png" alt="Inventory Window"></p>
+<p>ps. <a href="https://www.gamasutra.com/view/feature/134949/learning_from_the_masters_level_.php" target="_blank" rel="noopener">This article on The Legend of Zelda level design</a> is pretty good!</p>
+
+      
+      &nbsp;
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nvn.io/2018/04/08/Spaghetti-Code/" data-id="cjlfht93w0023encrfnkvzzop" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/botw/">botw</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Inventory-Popup" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/03/Inventory-Popup/" class="article-date">
-  <time datetime="2018-04-03T18:28:59.000Z" itemprop="datePublished">2018-04-03</time>
+  <time datetime="2018-04-03T19:28:59.000Z" itemprop="datePublished">2018-04-03</time>
 </a>
     
   <div class="article-category">
@@ -110,7 +166,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/04/03/Inventory-Popup/" data-id="cjl499tr0001i0wa95ku9qmkx" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/04/03/Inventory-Popup/" data-id="cjlfht939000uencr4h46inou" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -126,7 +182,7 @@ ga('send', 'pageview');
     <article id="post-Happy-Easter" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/01/Happy-Easter/" class="article-date">
-  <time datetime="2018-04-01T08:23:58.000Z" itemprop="datePublished">2018-04-01</time>
+  <time datetime="2018-04-01T09:23:58.000Z" itemprop="datePublished">2018-04-01</time>
 </a>
     
   <div class="article-category">
@@ -155,7 +211,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/04/01/Happy-Easter/" data-id="cjl499tqr000y0wa9lckuup3n" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/04/01/Happy-Easter/" data-id="cjlfht936000oencrk65kcs4m" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/holiday/">holiday</a></li></ul>
@@ -171,7 +227,7 @@ ga('send', 'pageview');
     <article id="post-DooM-Article" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/28/DooM-Article/" class="article-date">
-  <time datetime="2018-03-28T18:14:17.000Z" itemprop="datePublished">2018-03-28</time>
+  <time datetime="2018-03-28T19:14:17.000Z" itemprop="datePublished">2018-03-28</time>
 </a>
     
   <div class="article-category">
@@ -211,7 +267,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/28/DooM-Article/" data-id="cjl499tq400040wa9hfg6tpqz" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/28/DooM-Article/" data-id="cjlfht92v0007encrqdu3ln30" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/article/">article</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/doom/">doom</a></li></ul>
@@ -227,7 +283,7 @@ ga('send', 'pageview');
     <article id="post-Item-Popups" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/26/Item-Popups/" class="article-date">
-  <time datetime="2018-03-26T18:12:22.000Z" itemprop="datePublished">2018-03-26</time>
+  <time datetime="2018-03-26T19:12:22.000Z" itemprop="datePublished">2018-03-26</time>
 </a>
     
   <div class="article-category">
@@ -257,7 +313,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/26/Item-Popups/" data-id="cjl499tqu00170wa9l6fpsgtf" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/26/Item-Popups/" data-id="cjlfht93j001iencre7vaybuz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/art-design/">art design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -273,7 +329,7 @@ ga('send', 'pageview');
     <article id="post-Camera-Perspective" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/18/Camera-Perspective/" class="article-date">
-  <time datetime="2018-03-18T18:03:51.000Z" itemprop="datePublished">2018-03-18</time>
+  <time datetime="2018-03-18T19:03:51.000Z" itemprop="datePublished">2018-03-18</time>
 </a>
     
   <div class="article-category">
@@ -318,7 +374,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/18/Camera-Perspective/" data-id="cjl499trj002u0wa98u54vp03" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/18/Camera-Perspective/" data-id="cjlfht92i0001encr0rj5kgfq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/art-design/">art design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/botw/">botw</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shader/">shader</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -334,7 +390,7 @@ ga('send', 'pageview');
     <article id="post-Shader-Work" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/15/Shader-Work/" class="article-date">
-  <time datetime="2018-03-15T18:01:28.000Z" itemprop="datePublished">2018-03-15</time>
+  <time datetime="2018-03-15T19:01:28.000Z" itemprop="datePublished">2018-03-15</time>
 </a>
     
   <div class="article-category">
@@ -363,7 +419,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/15/Shader-Work/" data-id="cjl499ts9003p0wa9zclbqzjb" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/15/Shader-Work/" data-id="cjlfht93s001xencrw6mijvsf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shader/">shader</a></li></ul>
@@ -379,7 +435,7 @@ ga('send', 'pageview');
     <article id="post-Work-Log" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/13/Work-Log/" class="article-date">
-  <time datetime="2018-03-13T17:59:11.000Z" itemprop="datePublished">2018-03-13</time>
+  <time datetime="2018-03-13T18:59:11.000Z" itemprop="datePublished">2018-03-13</time>
 </a>
     
   <div class="article-category">
@@ -410,7 +466,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/13/Work-Log/" data-id="cjl499tsn004k0wa9z63ld291" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/13/Work-Log/" data-id="cjlfht94q003tencrp71hneoi" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -426,7 +482,7 @@ ga('send', 'pageview');
     <article id="post-Little-Light" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/12/Little-Light/" class="article-date">
-  <time datetime="2018-03-12T17:51:00.000Z" itemprop="datePublished">2018-03-12</time>
+  <time datetime="2018-03-12T18:51:00.000Z" itemprop="datePublished">2018-03-12</time>
 </a>
     
   <div class="article-category">
@@ -472,7 +528,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/12/Little-Light/" data-id="cjl499tr2001o0wa9nq7zkxuf" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/12/Little-Light/" data-id="cjlfht93l001lencryuro52m1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/destiny/">destiny</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/story/">story</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -522,58 +578,10 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/08/Collision-Detection/" data-id="cjl499tq300030wa9035zp5mo" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/08/Collision-Detection/" data-id="cjlfht93v0020encrd5q90q24" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Vapor-Board" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/04/Vapor-Board/" class="article-date">
-  <time datetime="2018-03-04T17:41:21.000Z" itemprop="datePublished">2018-03-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/vapor-game/">vapor game</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/04/Vapor-Board/">Vapor Board</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Here is the Vapor Board as viewed in Magica Voxel.</p>
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 68.966%;"><iframe src="https://streamable.com/s/6ps7t/tvdeae" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
-
-<p><strong>Wallpaper</strong><br>I made some wallpaper versions of the vapor board. One with a <a href="/images/vaporStoryBoard.png">black background</a> and one with a <a href="/images/vaporStoryBoardTrans.png">transparent background</a>. They are 2048x1706.</p>
-
-      
-      &nbsp;
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/04/Vapor-Board/" data-id="cjl499tsi00470wa9r0gtzige" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/art-design/">art design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/magica-voxel/">magica voxel</a></li></ul>
 
     </footer>
   </div>
@@ -608,7 +616,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/art-design/" style="font-size: 15px;">art design</a> <a href="/tags/article/" style="font-size: 10px;">article</a> <a href="/tags/botw/" style="font-size: 11.25px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12.5px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/gamemaker/" style="font-size: 18.75px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 11.25px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11.25px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/shader/" style="font-size: 11.25px;">shader</a> <a href="/tags/story/" style="font-size: 10px;">story</a> <a href="/tags/tech-design/" style="font-size: 16.25px;">tech design</a> <a href="/tags/unity/" style="font-size: 11.25px;">unity</a> <a href="/tags/unreal/" style="font-size: 13.75px;">unreal</a> <a href="/tags/video/" style="font-size: 17.5px;">video</a> <a href="/tags/website/" style="font-size: 12.5px;">website</a>
+      <a href="/tags/art-design/" style="font-size: 15.71px;">art design</a> <a href="/tags/article/" style="font-size: 10px;">article</a> <a href="/tags/botw/" style="font-size: 11.43px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12.86px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/gamemaker/" style="font-size: 18.57px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 11.43px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11.43px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/shader/" style="font-size: 11.43px;">shader</a> <a href="/tags/story/" style="font-size: 10px;">story</a> <a href="/tags/tech-design/" style="font-size: 15.71px;">tech design</a> <a href="/tags/unity/" style="font-size: 11.43px;">unity</a> <a href="/tags/unreal/" style="font-size: 14.29px;">unreal</a> <a href="/tags/video/" style="font-size: 17.14px;">video</a> <a href="/tags/website/" style="font-size: 12.86px;">website</a>
     </div>
   </div>
 
@@ -630,6 +638,10 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2018/08/29/Summer-in-the-City/">Summer in the City</a>
+          </li>
+        
+          <li>
             <a href="/2018/08/21/The-TODO-List/">The TODO List</a>
           </li>
         
@@ -643,10 +655,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2018/08/17/Nah-man-it-s-August/">Nah man, it&#39;s August</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/01/Still-Alive/">Still Alive?</a>
           </li>
         
       </ul>
