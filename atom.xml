@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2018-08-29T18:48:07.015Z</updated>
+  <updated>2018-09-11T23:39:31.752Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pastel Future</title>
+    <link href="http://nvn.io/2018/09/07/Pastel-Future/"/>
+    <id>http://nvn.io/2018/09/07/Pastel-Future/</id>
+    <published>2018-09-07T16:59:00.000Z</published>
+    <updated>2018-09-11T23:39:31.752Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="A-Pastel-Future"><a href="#A-Pastel-Future" class="headerlink" title="A Pastel Future"></a>A Pastel Future</h2><p>I’ve been working on a world that takes place in an alternate 2005. In this version of the world, the 90s were not the decade of grunge, blonde tips did not exist, and Pulp Fiction was a neon-noir film masterpiece. On the eve of Y2K, instead of hiding in their basements with a two year supply of canned food, people jack in and build a collective experience that accelerates the world’s technology growth exponentially.</p><p>Steve Jobs introduces the Apple Watch over a decade earlier than we are used to. It includes a feature that covers you in a protective pill shapped bubble from head to toe; very important when Infection is on the rise! Meanwhile, Quantel combines forces with Lecktrik Systems to create the world’s first line of smart clothing, with Cell Touch technology.</p><p>Miami Vice is longest running show of all-time and Don Johnson is the highest paid actor in the world. Jan Hammer tops the charts on an annual basis. What a world!</p><h2 id="Telling-a-Story"><a href="#Telling-a-Story" class="headerlink" title="Telling a Story"></a>Telling a Story</h2><p>I’ve written some short stories before, but nothing on the scale of this game. I have a lot of threads that I need to tie together. The story is a variation on the Hero’s Journey:</p><blockquote><p>In narratology and comparative mythology, the monomyth, or the hero’s journey, is the common template of a broad category of tales that involve a hero who goes on an adventure, and in a decisive crisis wins a victory, and then comes home changed or transformed.</p></blockquote><p>You can read more about <a href="https://en.wikipedia.org/wiki/Hero%27s_journey" target="_blank" rel="noopener">the Hero’s Journey on Wikipedia</a>.</p><h2 id="Black-Market-Clothing"><a href="#Black-Market-Clothing" class="headerlink" title="Black Market Clothing"></a>Black Market Clothing</h2><p>The first quest in the works has you getting involved in the black market. In our new world, certain types of clothing are banned because of how they are used in the world of recreational drugs. This particular item that you are searching for has a combination of Cell Touch and Quantel properties, which allow it two do two things:</p><ul><li>Transport matter from a remote broadcast system to the garment’s internal molecular delivery system.</li><li>Transfer matter and data into the skin at the molecular level.</li></ul><p> Enterprising parties use these two properties to facilitate the remote delivery of illicit substances. A string of underground clubs are built around the use of this type of clothing. These clubs are very exclusive and highly illegal. Your client wants to obtain some of the clothing required to attend such clubs and since she has something you need, you’re on the hook to find something she can wear.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;A-Pastel-Future&quot;&gt;&lt;a href=&quot;#A-Pastel-Future&quot; class=&quot;headerlink&quot; title=&quot;A Pastel Future&quot;&gt;&lt;/a&gt;A Pastel Future&lt;/h2&gt;&lt;p&gt;I’ve been working 
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="story" scheme="http://nvn.io/tags/story/"/>
+    
+  </entry>
   
   <entry>
     <title>Summer in the City</title>
@@ -556,36 +581,6 @@
       <category term="destiny" scheme="http://nvn.io/tags/destiny/"/>
     
       <category term="story" scheme="http://nvn.io/tags/story/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Collision Detection</title>
-    <link href="http://nvn.io/2018/03/08/Collision-Detection/"/>
-    <id>http://nvn.io/2018/03/08/Collision-Detection/</id>
-    <published>2018-03-08T18:47:59.000Z</published>
-    <updated>2018-08-17T18:00:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>I’ve been working steadily on collision detection. Here is a bug with collision detection and dashing.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/z1vx2/rugekl" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><p>The problem is that my player is moving more pixels per game tick than the collision object is wide. The player passes right over the collision block without ever setting foot on it, then it collides with the next one and stops. What I’m doing now is checking to see if my destination location would cause a collision. I need to check for a collision at any point from my current position to my destination. Fun stuff!</p><p>Here is a short clip of the city.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/o1rq5/tlofyf" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;I’ve been working steadily on collision detection. Here is a bug with collision detection and dashing.&lt;/p&gt;
-&lt;div style=&quot;width: 100%; heigh
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
