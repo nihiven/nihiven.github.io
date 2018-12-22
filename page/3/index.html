@@ -77,68 +77,6 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
-    <article id="post-Little-Light" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/12/Little-Light/" class="article-date">
-  <time datetime="2018-03-12T17:51:00.000Z" itemprop="datePublished">2018-03-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/vapor-game/">vapor game</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/12/Little-Light/">Little Light</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>Technical Design</strong><br>GameMaker really works well when it comes to reuseability. I will code something directly on the player object, the code to initialize the sound emitters for instance, then refactor that code into a function that accepts the target object as a parameter. This isn’t groundbreaking or anything. The great part is the way GameMaker facilitates this type of design and makes it easy to do. It agrees with my style very much.</p>
-<p>Let’s get to some specific things I’m working on…</p>
-<p><strong>The Player</strong><br>The main character was originally written as a guy like me named Elliot Ever. However, this quickly lead to me referring to the world as the Eververse, which is not good. I’m not sure what to name him now. I was thinking of letting the player name the character and not referring to the character by any specific gender. This way, the person playing the game can pour themself into the main character container and not feel out of place. I’d like anyone to be able to imagine that if they were put in the hero’s place, they could fill the role very well!</p>
-<p>Not having a specific character to work with got me thinking about the hero’s interactions with other characters in the game. How would a hero with no personality decide what to say, what to do? So I decided to give the hero a personality type, akin to how the hero is defined in Just Cause 3. Rico Rodriguez has a very well defined personality and set of needs.</p>
-<blockquote>
-<p>“The child of one thousand comic books and action movies. He is James Bond, Mad Max, Jason Bourne, El Mariachi, Wolverine, Punisher, Rambo, Tony Montana and Han Solo all rolled into one. With a touch of Enrique Iglesias to top it all off!”</p>
-</blockquote>
-<p>I’ve thought about giving the hero a personality that is loosely based on one of the Myers-Briggs types, speficially, INTP. That’s probably where I will start as far as interactions go.</p>
-<p><strong>Little Buddy</strong><br>I wanted to have a buddy companion for the player. Think, Destiny’s Ghost, Halo’s Cortana, or System Shock’s SHODAN. I picture the companion traveling with the player like the Ghost, giving the player real-time augmented reality feedback. For instance, when you walk up to an NPC, the companion will display the active quests involving that NPC. How or where these would be displayed is unknown.</p>
-<p>GameMaker works in such a way that I will code the logic for these augmented reality components into the companion’s game object. They will activate and deactivate based soley on the Ghost’s presence in the world and will operate entirely independent of any other object in the game. The ghost requires a follow target, in our case it’s the player. From that follow object, the ghost gets the viewport and uses that to display its augmented reality information. You could attach it to any object with an active viewport and it would display its information correctly.</p>
-<p>I liked the Ghost idea until I played Hyper Light Drifter and saw their Ghost. That game already has so many similarities to mine that adding a ghost just seems like it will invite even more comparison. Part of me doesn’t care about the similarities. I’ve known about the type of game I want to make for 10 years and that’s what I’m going to make. Another part of me says, get rid of the ghost, get rid of the work required to make the ghost. I’m leaning towards an in-ear companion, much like <a href="http://enderverse.wikia.com/wiki/Jane" target="_blank" rel="noopener">Jane</a> from the Ender book, “<a href="https://en.wikipedia.org/wiki/Speaker_for_the_Dead" target="_blank" rel="noopener">Speaker for the Dead</a>.”</p>
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 117.647%;"><iframe src="https://streamable.com/s/lewkw/wflejq" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;" alt="Samus"></iframe></div>
-
-<p><strong>The Game World</strong><br><strong>Earth</strong><br>This has been tough for me. I want so badly to integrate unexplained real world events into my story, explaining them as consequences of the game’s events. It just doesn’t seem like it’s going to line up. I will take another pass at it though, I really enjoyed writing those parts of the story.</p>
-<p><strong>Roma</strong><br>The ‘alien’ world is called Roma in everything I’ve written. Inhabited by Romans, which aren’t from Romania. They are ‘robotic human.’ Not really robotic at all, but that’s how we can understand them from our frame of reference.</p>
-<p><strong>Romans</strong><br>They are a lot like we could be a few hundred years from now. Their planet is dying and has recently reach the tipping point. They disregarded any concern for the planet because they had an extremely advanced space program. It was very nearly ready to support a full blown planet-wide emigration when they were attacked on a global scale. The assailant, an alien race that frequented the Solar system, was thought to be an ally and attacked with little resistance. By the time the Romans were able to respond, the war had already been lost. The Romans presence in space was nearly wiped out when the capital spaceport, Porta De Ceu, was totally destroyed. Millions died in the unprovoked attack.</p>
-<p><strong>Collusion and the Altayih</strong><br>Once the dust had settled from the invasion, It was found that many Romans had colluded with the Altayih to ensure the effectiveness of the attack. These traitors, known as Tamurins, were critical to the Altayin’s understanding of the Roman defenses, helping to detail and map out the Roman response to the surprise attack. The Roman’s faith and trust in the Altayih was mirrored by the Tamurins, and they too were betrayed. The Tamurins were promised positions of power once the Romans were conquered, but few survived the attacks and many were executed by their co-conspirators. Within a few weeks, the Altayin’s had taken control of every one of the Romans offworld mines. They enslaved the inhabitants of the mining colonies and eventually worked many of the colonists to death. It turned out that the Altayih had no desire to conquer the Romans and were merely doing what had to be done to collect as many resources as they could. After a few decades, the Altayih moved on to a new system.</p>
-<p>This goes on and on…</p>
-
-      
-      &nbsp;
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/12/Little-Light/" data-id="cjpz2m4i4001v46a9nsa7y64f" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/destiny/">destiny</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/story/">story</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-Collision-Detection" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/08/Collision-Detection/" class="article-date">
@@ -176,7 +114,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/08/Collision-Detection/" data-id="cjpz2m4h9000246a93jkulbxu" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/08/Collision-Detection/" data-id="cjpz2x459004e0ja9an6jkokb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -224,7 +162,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/04/Vapor-Board/" data-id="cjpz2m4ir003q46a9sxbi85sq" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/04/Vapor-Board/" data-id="cjpz2x45800480ja9yjk8pe6f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/art-design/">art design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/magica-voxel/">magica voxel</a></li></ul>
@@ -279,7 +217,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/03/03/The-Magica-Voxels/" data-id="cjpz2m4il003a46a9g4lvn1xf" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/03/03/The-Magica-Voxels/" data-id="cjpz2x450003n0ja94je6seo7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/art-design/">art design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/magica-voxel/">magica voxel</a></li></ul>
@@ -336,7 +274,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/02/26/GameMaker-and-Pixel-Art/" data-id="cjpz2m4hx001846a9xxm383az" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/02/26/GameMaker-and-Pixel-Art/" data-id="cjpz2x441000s0ja9xrhtsbnm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -380,7 +318,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/02/25/Kick-and-Pitch/" data-id="cjpz2m4i0001i46a9pgd2yyq5" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/02/25/Kick-and-Pitch/" data-id="cjpz2x44f001u0ja9v8uu36mb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/destiny/">destiny</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li></ul>
@@ -432,7 +370,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/02/24/Two-More-Engines/" data-id="cjpz2m4it003w46a9smllyio5" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/02/24/Two-More-Engines/" data-id="cjpz2x45400410ja9ramof52v" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/construct/">construct</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li></ul>
@@ -481,7 +419,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/02/19/Three-engines-which-one/" data-id="cjpz2m4im003d46a9dj7qb9vy" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/02/19/Three-engines-which-one/" data-id="cjpz2x44q002v0ja9k7l1s3lc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/engine/">engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unity/">unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unreal/">unreal</a></li></ul>
@@ -526,7 +464,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/02/18/Dream-State-Pittsburgh/" data-id="cjpz2m4hr000s46a9nfqp9ngt" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/02/18/Dream-State-Pittsburgh/" data-id="cjpz2x43g00020ja93k76n0zd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/art-design/">art design</a></li></ul>
@@ -576,10 +514,57 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/02/17/Low-Poly-Landscapes/" data-id="cjpz2m4i1001l46a9lqwfnrbu" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/02/17/Low-Poly-Landscapes/" data-id="cjpz2x44600130ja972o20o69" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lowpoly/">lowpoly</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unreal/">unreal</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/website/">website</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hexo-is-the-best-o" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/12/hexo-is-the-best-o/" class="article-date">
+  <time datetime="2018-02-13T03:52:34.000Z" itemprop="datePublished">2018-02-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/vapor-game/">vapor game</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/12/hexo-is-the-best-o/">Hexo is the Best-O!</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Website Design</strong><br>I cannot wait to be done with the redesign of the website. I’m moving to from a fully static site to <a href="http://hexo.io" target="_blank" rel="noopener">hexo</a>, as recommended by <a href="https://twitter.com/washburn340" target="_blank" rel="noopener">Josh</a> of <a href="http://siliconreign.com" target="_blank" rel="noopener">Silicon Reign</a>. I’ve entered all of my existing entries into the post database (some markdown files) and now I’m working on the theme.</p>
+<p><strong>Technical Design</strong><br>I took a look at <a href="https://godotengine.org" target="_blank" rel="noopener">GoDot Engine</a> and it is definitely not as polished as Unity. No surprise there though, it’s pretty new. That also means there are less tutorials, examples, samples, and questions posted for it. I’m not saying no yet, I’ll check it out the next time I need a break from Unity.</p>
+<p>The <a href="https://www.unrealengine.com" target="_blank" rel="noopener">Unreal Engine</a>, on the other hand, is flat out amazing. It seems more polished than Unity and the amount of support you can find for it is enormous. I’m going to check it out for a little while. I need a couple of days away from Unity and maybe I’ll never go back. The Unreal editor give you a nice tutorial when you open it for the first time. It includes examples for many common types of games and they are all well documented. I’m excited to see what kind of youtube content there is, as well as what’s sitting out in the asset store. One of the downsides is that it’s C++ only if you want to write code. There is a ‘Blueprint’ system that I’m not familiar with. I don’t know what you can or can’t do with it, so I’ll need to look into that. For now… sleep.</p>
+
+      
+      &nbsp;
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nvn.io/2018/02/12/hexo-is-the-best-o/" data-id="cjpz2x44x003h0ja9jd2c3d0h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unity/">unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unreal/">unreal</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/website/">website</a></li></ul>
 
     </footer>
   </div>
@@ -623,7 +608,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
     </div>
   </div>
 
@@ -634,10 +619,6 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2018/10/26/From-the-Ashes/">Building Without Coding</a>
-          </li>
         
           <li>
             <a href="/2018/09/11/Pastel-Future/">Pastel Future</a>
@@ -653,6 +634,10 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2018/08/19/Pill-Baxton/">Pill Baxton</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/18/GlitchRock-Logo/">GlitchRock Logo</a>
           </li>
         
       </ul>

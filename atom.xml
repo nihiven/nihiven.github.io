@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2018-10-29T23:55:59.141Z</updated>
+  <updated>2018-09-11T23:44:17.889Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Building Without Coding</title>
-    <link href="http://nvn.io/2018/10/26/From-the-Ashes/"/>
-    <id>http://nvn.io/2018/10/26/From-the-Ashes/</id>
-    <published>2018-10-26T04:32:47.000Z</published>
-    <updated>2018-10-29T23:55:59.141Z</updated>
-    
-    <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/C3un0LNxP5o" frameborder="0" allowfullscreen></iframe></div><p><img src="/images/pittsburgh.jpg" alt="My office" title="UFO"></p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/pzg1v/qlwiyw" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;//www.youtube.com/embed/C3un0LNxP5o&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Pastel Future</title>
@@ -111,9 +87,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -165,9 +141,9 @@
       <category term="glitchrock games" scheme="http://nvn.io/categories/glitchrock-games/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -299,9 +275,9 @@
       <category term="game jam" scheme="http://nvn.io/categories/game-jam/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="ludum dare" scheme="http://nvn.io/tags/ludum-dare/"/>
     
@@ -328,9 +304,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -359,15 +335,15 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -393,9 +369,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -476,9 +452,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -503,17 +479,17 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
       <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
       <category term="shader" scheme="http://nvn.io/tags/shader/"/>
     
@@ -540,9 +516,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="shader" scheme="http://nvn.io/tags/shader/"/>
     
@@ -570,6 +546,41 @@
     
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Little Light</title>
+    <link href="http://nvn.io/2018/03/12/Little-Light/"/>
+    <id>http://nvn.io/2018/03/12/Little-Light/</id>
+    <published>2018-03-12T17:51:00.000Z</published>
+    <updated>2018-08-18T17:51:20.369Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>GameMaker really works well when it comes to reuseability. I will code something directly on the player object, the code to initialize the sound emitters for instance, then refactor that code into a function that accepts the target object as a parameter. This isn’t groundbreaking or anything. The great part is the way GameMaker facilitates this type of design and makes it easy to do. It agrees with my style very much.</p><p>Let’s get to some specific things I’m working on…</p><p><strong>The Player</strong><br>The main character was originally written as a guy like me named Elliot Ever. However, this quickly lead to me referring to the world as the Eververse, which is not good. I’m not sure what to name him now. I was thinking of letting the player name the character and not referring to the character by any specific gender. This way, the person playing the game can pour themself into the main character container and not feel out of place. I’d like anyone to be able to imagine that if they were put in the hero’s place, they could fill the role very well!</p><p>Not having a specific character to work with got me thinking about the hero’s interactions with other characters in the game. How would a hero with no personality decide what to say, what to do? So I decided to give the hero a personality type, akin to how the hero is defined in Just Cause 3. Rico Rodriguez has a very well defined personality and set of needs.</p><blockquote><p>“The child of one thousand comic books and action movies. He is James Bond, Mad Max, Jason Bourne, El Mariachi, Wolverine, Punisher, Rambo, Tony Montana and Han Solo all rolled into one. With a touch of Enrique Iglesias to top it all off!”</p></blockquote><p>I’ve thought about giving the hero a personality that is loosely based on one of the Myers-Briggs types, speficially, INTP. That’s probably where I will start as far as interactions go.</p><p><strong>Little Buddy</strong><br>I wanted to have a buddy companion for the player. Think, Destiny’s Ghost, Halo’s Cortana, or System Shock’s SHODAN. I picture the companion traveling with the player like the Ghost, giving the player real-time augmented reality feedback. For instance, when you walk up to an NPC, the companion will display the active quests involving that NPC. How or where these would be displayed is unknown.</p><p>GameMaker works in such a way that I will code the logic for these augmented reality components into the companion’s game object. They will activate and deactivate based soley on the Ghost’s presence in the world and will operate entirely independent of any other object in the game. The ghost requires a follow target, in our case it’s the player. From that follow object, the ghost gets the viewport and uses that to display its augmented reality information. You could attach it to any object with an active viewport and it would display its information correctly.</p><p>I liked the Ghost idea until I played Hyper Light Drifter and saw their Ghost. That game already has so many similarities to mine that adding a ghost just seems like it will invite even more comparison. Part of me doesn’t care about the similarities. I’ve known about the type of game I want to make for 10 years and that’s what I’m going to make. Another part of me says, get rid of the ghost, get rid of the work required to make the ghost. I’m leaning towards an in-ear companion, much like <a href="http://enderverse.wikia.com/wiki/Jane" target="_blank" rel="noopener">Jane</a> from the Ender book, “<a href="https://en.wikipedia.org/wiki/Speaker_for_the_Dead" target="_blank" rel="noopener">Speaker for the Dead</a>.”</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 117.647%;"><iframe src="https://streamable.com/s/lewkw/wflejq" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;" alt="Samus"></iframe></div><p><strong>The Game World</strong><br><strong>Earth</strong><br>This has been tough for me. I want so badly to integrate unexplained real world events into my story, explaining them as consequences of the game’s events. It just doesn’t seem like it’s going to line up. I will take another pass at it though, I really enjoyed writing those parts of the story.</p><p><strong>Roma</strong><br>The ‘alien’ world is called Roma in everything I’ve written. Inhabited by Romans, which aren’t from Romania. They are ‘robotic human.’ Not really robotic at all, but that’s how we can understand them from our frame of reference.</p><p><strong>Romans</strong><br>They are a lot like we could be a few hundred years from now. Their planet is dying and has recently reach the tipping point. They disregarded any concern for the planet because they had an extremely advanced space program. It was very nearly ready to support a full blown planet-wide emigration when they were attacked on a global scale. The assailant, an alien race that frequented the Solar system, was thought to be an ally and attacked with little resistance. By the time the Romans were able to respond, the war had already been lost. The Romans presence in space was nearly wiped out when the capital spaceport, Porta De Ceu, was totally destroyed. Millions died in the unprovoked attack.</p><p><strong>Collusion and the Altayih</strong><br>Once the dust had settled from the invasion, It was found that many Romans had colluded with the Altayih to ensure the effectiveness of the attack. These traitors, known as Tamurins, were critical to the Altayin’s understanding of the Roman defenses, helping to detail and map out the Roman response to the surprise attack. The Roman’s faith and trust in the Altayih was mirrored by the Tamurins, and they too were betrayed. The Tamurins were promised positions of power once the Romans were conquered, but few survived the attacks and many were executed by their co-conspirators. Within a few weeks, the Altayin’s had taken control of every one of the Romans offworld mines. They enslaved the inhabitants of the mining colonies and eventually worked many of the colonists to death. It turned out that the Altayih had no desire to conquer the Romans and were merely doing what had to be done to collect as many resources as they could. After a few decades, the Altayih moved on to a new system.</p><p>This goes on and on…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Technical Design&lt;/strong&gt;&lt;br&gt;GameMaker really works well when it comes to reuseability. I will code something directly on the pla
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
+    
+      <category term="destiny" scheme="http://nvn.io/tags/destiny/"/>
+    
+      <category term="story" scheme="http://nvn.io/tags/story/"/>
     
   </entry>
   
