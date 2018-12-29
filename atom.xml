@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2018-12-24T14:56:21.408Z</updated>
+  <updated>2018-12-29T21:13:14.995Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Back in the Game</title>
+    <link href="http://nvn.io/2018/12/29/Back-in-the-Game/"/>
+    <id>http://nvn.io/2018/12/29/Back-in-the-Game/</id>
+    <published>2018-12-29T21:09:35.000Z</published>
+    <updated>2018-12-29T21:13:14.995Z</updated>
+    
+    <content type="html"><![CDATA[<p>I’m trying to get back in the programming / creative groove. I’m going to do some small projects over the next week or so to help that along. First, I’ll make something to do with crafting. Maybe just a crafting interface? Something like a ‘Pasetllizer’ shader would be cool too.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’m trying to get back in the programming / creative groove. I’m going to do some small projects over the next week or so to help that al
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
+    
+  </entry>
   
   <entry>
     <title>Merry Christmas!</title>
@@ -47,7 +72,7 @@
     <link href="http://nvn.io/2018/09/11/Pastel-Future/"/>
     <id>http://nvn.io/2018/09/11/Pastel-Future/</id>
     <published>2018-09-11T23:59:00.000Z</published>
-    <updated>2018-09-11T23:44:17.889Z</updated>
+    <updated>2018-12-29T21:12:10.263Z</updated>
     
     <content type="html"><![CDATA[<p>I’ve been working on a world that takes place in an alternate 2005. In this version of the world, the 90s were not the decade of grunge, blonde tips did not exist, and Pulp Fiction was a neon-noir film masterpiece. On the eve of Y2K, instead of hiding in their basements with a two year supply of canned food, people jack in and build a collective experience that accelerates the world’s technology growth exponentially.</p><p>Steve Jobs introduces the Apple Watch over a decade earlier than we are used to. It includes a feature that covers you in a protective pill shapped bubble from head to toe; very important when Infection is on the rise! Meanwhile, Quantel combines forces with Lecktrik Systems to create the world’s first line of smart clothing, with Cell Touch technology.</p><p>Miami Vice is longest running show of all-time and Don Johnson is the highest paid actor in the world. Jan Hammer tops the charts on an annual basis. What a world!</p><h2 id="Telling-a-Story"><a href="#Telling-a-Story" class="headerlink" title="Telling a Story"></a>Telling a Story</h2><p>I’ve written some short stories before, but nothing on the scale of this game. I have a lot of threads that I need to tie together. The story is a variation on the Hero’s Journey:</p><blockquote><p>In narratology and comparative mythology, the monomyth, or the hero’s journey, is the common template of a broad category of tales that involve a hero who goes on an adventure, and in a decisive crisis wins a victory, and then comes home changed or transformed.</p></blockquote><p>You can read more about <a href="https://en.wikipedia.org/wiki/Hero%27s_journey" target="_blank" rel="noopener">the Hero’s Journey on Wikipedia</a>.</p><h2 id="Black-Market-Clothing"><a href="#Black-Market-Clothing" class="headerlink" title="Black Market Clothing"></a>Black Market Clothing</h2><p>The first quest in the works has you getting involved in the black market. In our new world, certain types of clothing are banned because of how they are used in the world of recreational drugs. This particular item that you are searching for has a combination of Cell Touch and Quantel properties, which allow it two do two things:</p><ul><li>Transport matter from a remote broadcast system to the garment’s internal molecular delivery system.</li><li>Transfer matter and data into the skin at the molecular level.</li></ul><p> Enterprising parties use these two properties to facilitate the remote delivery of illicit substances. A string of underground clubs are built around the use of this type of clothing. These clubs are very exclusive and highly illegal. Your client wants to obtain some of the clothing required to attend such clubs and since she has something you need, you’re on the hook to find something she can wear.</p>]]></content>
     
@@ -72,7 +97,7 @@
     <link href="http://nvn.io/2018/08/29/Summer-in-the-City/"/>
     <id>http://nvn.io/2018/08/29/Summer-in-the-City/</id>
     <published>2018-08-29T18:45:21.000Z</published>
-    <updated>2018-08-29T18:48:07.000Z</updated>
+    <updated>2018-12-29T21:12:30.913Z</updated>
     
     <content type="html"><![CDATA[<p>I’m using a set of modular city assests to mock up a sample map. I’m going to set up some interactions with some city-dwellers and work on some quest stuff with them. Maybe there is a gunsmith to build me a Sleeper?</p><p><img src="/images/Sci-Fi-city-samples.jpg" alt="Vapor City?"></p>]]></content>
     
@@ -113,11 +138,11 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
@@ -167,9 +192,9 @@
       <category term="glitchrock games" scheme="http://nvn.io/categories/glitchrock-games/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -301,9 +326,9 @@
       <category term="game jam" scheme="http://nvn.io/categories/game-jam/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="ludum dare" scheme="http://nvn.io/tags/ludum-dare/"/>
     
@@ -330,13 +355,13 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+      <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
-      <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -361,15 +386,15 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -395,9 +420,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -478,9 +503,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -505,17 +530,17 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
       <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
       <category term="shader" scheme="http://nvn.io/tags/shader/"/>
     
@@ -542,36 +567,11 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
       <category term="shader" scheme="http://nvn.io/tags/shader/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Work Log</title>
-    <link href="http://nvn.io/2018/03/13/Work-Log/"/>
-    <id>http://nvn.io/2018/03/13/Work-Log/</id>
-    <published>2018-03-13T17:59:11.000Z</published>
-    <updated>2018-08-17T18:00:18.027Z</updated>
-    
-    <content type="html"><![CDATA[<p>If you don’t see any updates for a while, check my <a href="/work.txt">Work Log</a>. I keep it updated with technical stuff, some ideas, to do lists, upcoming objects, etc. Sometimes I don’t have much to say and don’t want to make a post here just to say I’m still around. I’ve added a link at the top of all pages.</p><p>Testing refined ghost movement.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/1z7mu/bbjczz" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;If you don’t see any updates for a while, check my &lt;a href=&quot;/work.txt&quot;&gt;Work Log&lt;/a&gt;. I keep it updated with technical stuff, some ideas, 
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
