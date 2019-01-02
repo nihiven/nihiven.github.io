@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-01-02T16:51:26.534Z</updated>
+  <updated>2019-01-02T17:40:31.902Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Guilty Pleasures?</title>
+    <link href="http://nvn.io/2019/01/02/Guilty-Pleasures/"/>
+    <id>http://nvn.io/2019/01/02/Guilty-Pleasures/</id>
+    <published>2019-01-02T17:39:29.000Z</published>
+    <updated>2019-01-02T17:40:31.902Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Good Music</strong><br>I don’t know why Spotify calls this a ‘Guilty Pleases’ playlist. These are good songs!</p><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4pUKG1kS0Ac" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Good Music&lt;/strong&gt;&lt;br&gt;I don’t know why Spotify calls this a ‘Guilty Pleases’ playlist. These are good songs!&lt;/p&gt;
+&lt;iframe src=&quot;ht
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="music" scheme="http://nvn.io/tags/music/"/>
+    
+  </entry>
   
   <entry>
     <title>My Favorite Number is 19</title>
@@ -382,13 +408,13 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
+      <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
+    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
-      <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
     
   </entry>
   
@@ -533,43 +559,6 @@
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Camera Perspective</title>
-    <link href="http://nvn.io/2018/03/18/Camera-Perspective/"/>
-    <id>http://nvn.io/2018/03/18/Camera-Perspective/</id>
-    <published>2018-03-18T18:03:51.000Z</published>
-    <updated>2018-08-18T17:48:27.904Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>Holy hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Maker works and what’s possible. I did something with the background sky that’s been behind the buildings in many of the videos below, replacing it with a shader instead of a texture. It works really well. If the shader was some type of cloudy sky, it would look a lot like the sky in Breath of the Wild, which is definitely a dynamic shader. Something a lot like this…</p><iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/Mtd3W7?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe><p><strong>Game Design</strong><br>One of the problems I’m having is how to handle the camera perspective. Think of a first or third person game, when the camera is low to the ground and you can see off into the distance. When the camera is high, you are above the player, staring down at the ground. These pictures illustrate the difference. These are all pictures of the same scene, with only the camera’s height changing.</p><table><tbody><tr><td><img src="/images/botwLowCamera.jpg" alt="Directly Behind"></td><td><img src="/images/botwMedCamera.png" alt="Behind High"></td><td><img src="/images/botwHighCamera.png" alt="Overhead"></td></tr></tbody></table><p>In my opinion, the first one looks the best and the third the worst. My game is a top down game, which is a lot like the third picture. My dilemma is: How do I make something that looks more like the first picture, than it does the third? The awesome feeling that I get from being able to stand atop a big mountain and look out over the landscape can’t be overstated. I don’t know that it’s possible to replicate that feeling in a 2d world though. In an attempt to replicate the low camera look, you can zoom out, which will increase the field of view. This relieves some of the claustraphobic feeling from the third picture. If that view was zoomed out, allowing you to see the sorroundings, it would be a little more playable. I tried this with my protoype and zoomed the camera out around 100%. It gives a much larger field of view and feels a little more substantial, which you can see in the video below.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/3sotf/doaahy" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><p>I’m going to keep experimenting. I’ll check out some other games to see how they handle it, as I’m sure someone already has a great solution.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;Technical Design&lt;/strong&gt;&lt;br&gt;Holy hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Make
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
-      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
-    
-      <category term="botw" scheme="http://nvn.io/tags/botw/"/>
-    
-      <category term="shader" scheme="http://nvn.io/tags/shader/"/>
     
   </entry>
   
