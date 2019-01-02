@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-01-02T06:42:59.290Z</updated>
+  <updated>2019-01-02T16:51:26.534Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://nvn.io/2019/01/01/My-Favorite-Number-is-19/"/>
     <id>http://nvn.io/2019/01/01/My-Favorite-Number-is-19/</id>
     <published>2019-01-02T01:38:51.000Z</published>
-    <updated>2019-01-02T06:42:59.290Z</updated>
+    <updated>2019-01-02T16:51:26.534Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>2019</strong><br>Every year I start off looking to do better than last year. I put in a sold six months of work on the Vapor Project last year, but things took a nose dive around my birthday.</p><p><strong>Pastel Future</strong><br>Crafting, building, farming, fighting, walking, talking, and exploring all played a part in the evolution of the vapor project. Pastel Future distils these activities into an enjoyable and inspiring experience, while shading everything with a bit of nostalgia and a hi-tech fantasy. Right now, the scope of Pastel Future is more than I can handle. An immediate goal is to determine what stays and what goes.</p><p><strong>My Future</strong><br>It feels good to be thinking about and working on my game again. So yes, I will do better this year. This year, GlitchRock Games will become what I’ve always wanted it to be: a game studio.</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>2019</strong><br>Every year I start off looking to do better than last year. I put in a sold six months of work on the Vapor Project last year, but things took a nose dive around my birthday.</p><p><strong>Pastel Future</strong><br>Crafting, building, farming, fighting, walking, talking, and exploring all played a part in the evolution of the vapor project. Pastel Future distills these activities into an enjoyable and inspiring experience, while shading everything with a bit of nostalgia and a hi-tech fantasy. Right now, the scope of Pastel Future is more than I can handle. An immediate goal is to determine what stays and what goes.</p><p><strong>My Future</strong><br>It feels good to be thinking about and working on my game again. So yes, I will do better this year. This year, GlitchRock Games will become what I’ve always wanted it to be: a game studio.</p>]]></content>
     
     <summary type="html">
     
@@ -37,9 +37,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
     
   </entry>
   
@@ -382,13 +382,13 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
+    
+      <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
     
   </entry>
   
