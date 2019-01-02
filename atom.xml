@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2018-12-29T21:13:14.995Z</updated>
+  <updated>2019-01-02T06:42:59.290Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My Favorite Number is 19</title>
+    <link href="http://nvn.io/2019/01/01/My-Favorite-Number-is-19/"/>
+    <id>http://nvn.io/2019/01/01/My-Favorite-Number-is-19/</id>
+    <published>2019-01-02T01:38:51.000Z</published>
+    <updated>2019-01-02T06:42:59.290Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>2019</strong><br>Every year I start off looking to do better than last year. I put in a sold six months of work on the Vapor Project last year, but things took a nose dive around my birthday.</p><p><strong>Pastel Future</strong><br>Crafting, building, farming, fighting, walking, talking, and exploring all played a part in the evolution of the vapor project. Pastel Future distils these activities into an enjoyable and inspiring experience, while shading everything with a bit of nostalgia and a hi-tech fantasy. Right now, the scope of Pastel Future is more than I can handle. An immediate goal is to determine what stays and what goes.</p><p><strong>My Future</strong><br>It feels good to be thinking about and working on my game again. So yes, I will do better this year. This year, GlitchRock Games will become what I’ve always wanted it to be: a game studio.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;2019&lt;/strong&gt;&lt;br&gt;Every year I start off looking to do better than last year. I put in a sold six months of work on the Vapor Proj
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+  </entry>
   
   <entry>
     <title>Back in the Game</title>
@@ -138,9 +165,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -192,9 +219,9 @@
       <category term="glitchrock games" scheme="http://nvn.io/categories/glitchrock-games/"/>
     
     
-      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -326,9 +353,9 @@
       <category term="game jam" scheme="http://nvn.io/categories/game-jam/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="ludum dare" scheme="http://nvn.io/tags/ludum-dare/"/>
     
@@ -357,9 +384,9 @@
     
       <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -386,15 +413,15 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -420,9 +447,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -503,9 +530,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
-    
       <category term="video" scheme="http://nvn.io/tags/video/"/>
+    
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
   </entry>
   
@@ -530,46 +557,17 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
+    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
       <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
-      <category term="shader" scheme="http://nvn.io/tags/shader/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shader Work</title>
-    <link href="http://nvn.io/2018/03/15/Shader-Work/"/>
-    <id>http://nvn.io/2018/03/15/Shader-Work/</id>
-    <published>2018-03-15T18:01:28.000Z</published>
-    <updated>2018-08-17T18:03:21.839Z</updated>
-    
-    <content type="html"><![CDATA[<p>Tonight, I’m working on something a little different for me. I need a ‘scan’ effect for when the ghost highlights something, which seems like something I can do with shaders. I’ve never used shaders before, so I’m looking at <a href="http://xorshaders.weebly.com/tutorials/converting-sandbox-shaders" target="_blank" rel="noopener">this tutorial</a> to help me out. This <a href="https://www.shadertoy.com/view/ldjGzV" target="_blank" rel="noopener">VCR distortion shader</a> is out of control! I’m looking to do something like this <a href="https://www.shadertoy.com/view/Xs3SWH" target="_blank" rel="noopener">scanning shader</a>.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Tonight, I’m working on something a little different for me. I need a ‘scan’ effect for when the ghost highlights something, which seems 
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="shader" scheme="http://nvn.io/tags/shader/"/>
     
