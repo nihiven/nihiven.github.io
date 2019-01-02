@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-01-02T17:43:25.420Z</updated>
+  <updated>2019-01-02T22:14:44.692Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://nvn.io/2019/01/02/Guilty-Pleasures/"/>
     <id>http://nvn.io/2019/01/02/Guilty-Pleasures/</id>
     <published>2019-01-02T17:39:29.000Z</published>
-    <updated>2019-01-02T17:43:25.420Z</updated>
+    <updated>2019-01-02T22:14:44.692Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Good Music</strong><br>I don’t know why Spotify calls this a ‘Guilty Pleases’ playlist. These are good songs! Maybe not ALL of them, but most.</p><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4pUKG1kS0Ac" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><p><strong>War Room</strong><br>I have a war room setup going in my dining room. I should be streaming this!</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Good Music</strong><br>I don’t know why Spotify calls this a ‘Guilty Pleases’ playlist. These are good songs! Maybe not ALL of them, but most.</p><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4pUKG1kS0Ac" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><p><strong>War Room</strong><br>I have a war room setup going in my dining room. I should be streaming this! Today I’m whipping up a crafting sample: run around, pick up items, use those items to craft new items.</p>]]></content>
     
     <summary type="html">
     
@@ -62,9 +62,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
-    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
     
   </entry>
   
