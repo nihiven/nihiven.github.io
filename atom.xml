@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-01-02T22:14:44.692Z</updated>
+  <updated>2019-01-03T04:06:31.450Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <title>Guilty Pleasures?</title>
     <link href="http://nvn.io/2019/01/02/Guilty-Pleasures/"/>
     <id>http://nvn.io/2019/01/02/Guilty-Pleasures/</id>
-    <published>2019-01-02T17:39:29.000Z</published>
-    <updated>2019-01-02T22:14:44.692Z</updated>
+    <published>2019-01-03T03:39:29.000Z</published>
+    <updated>2019-01-03T04:06:31.450Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Good Music</strong><br>I don’t know why Spotify calls this a ‘Guilty Pleases’ playlist. These are good songs! Maybe not ALL of them, but most.</p><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4pUKG1kS0Ac" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><p><strong>War Room</strong><br>I have a war room setup going in my dining room. I should be streaming this! Today I’m whipping up a crafting sample: run around, pick up items, use those items to craft new items.</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Good Music</strong><br>I don’t know why Spotify calls this a ‘Guilty Pleases’ playlist. These are good songs! Maybe not ALL of them, but most.</p><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4pUKG1kS0Ac" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><p><strong>War Room</strong><br>I have a war room setup going in my dining room. I should be streaming this! Today I’m whipping up a crafting sample: run around, pick up items, use those items to craft new items.</p><p><strong>Distilled</strong><br>In my first project, I’m going to have some fun with crafting. Building recipes, checking item requirements, unlocking recipes and actions based on item inventory… all on the list for this project. I’ll also figure out how to populate an area with certain items, given a target density and list of items. I picture creating areas on the map where certain types of plants grow, then over time, plants will spring up in the designated area until a certain regional species density is reached. As you pick plants, new ones grow back to fill the region. This will require instancing plant objects and tracking overall population. Maybe a plant factory?</p>]]></content>
     
     <summary type="html">
     
@@ -37,7 +37,11 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
       <category term="music" scheme="http://nvn.io/tags/music/"/>
+    
+      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
     
   </entry>
   
@@ -73,15 +77,15 @@
     <link href="http://nvn.io/2018/12/29/Back-in-the-Game/"/>
     <id>http://nvn.io/2018/12/29/Back-in-the-Game/</id>
     <published>2018-12-29T21:09:35.000Z</published>
-    <updated>2018-12-29T21:13:14.995Z</updated>
+    <updated>2019-01-03T03:59:26.507Z</updated>
     
-    <content type="html"><![CDATA[<p>I’m trying to get back in the programming / creative groove. I’m going to do some small projects over the next week or so to help that along. First, I’ll make something to do with crafting. Maybe just a crafting interface? Something like a ‘Pasetllizer’ shader would be cool too.</p>]]></content>
+    <content type="html"><![CDATA[<p>I’m trying to get back into the programming / creative groove. I’m going to do some small projects to help that along. First, I’ll make something to do with crafting. Maybe just a crafting interface? Something like a ‘Pasetllizer’ shader would be cool too.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;I’m trying to get back in the programming / creative groove. I’m going to do some small projects over the next week or so to help that al
+        &lt;p&gt;I’m trying to get back into the programming / creative groove. I’m going to do some small projects to help that along. First, I’ll make s
       
     
     </summary>
@@ -190,9 +194,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -244,9 +248,9 @@
       <category term="glitchrock games" scheme="http://nvn.io/categories/glitchrock-games/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -378,9 +382,9 @@
       <category term="game jam" scheme="http://nvn.io/categories/game-jam/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="ludum dare" scheme="http://nvn.io/tags/ludum-dare/"/>
     
@@ -407,9 +411,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -438,15 +442,15 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -472,9 +476,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="video" scheme="http://nvn.io/tags/video/"/>
     
@@ -555,9 +559,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
