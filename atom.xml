@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-01-03T04:06:31.450Z</updated>
+  <updated>2019-01-13T23:10:12.168Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Free Writing</title>
+    <link href="http://nvn.io/2019/01/13/Free-Writing/"/>
+    <id>http://nvn.io/2019/01/13/Free-Writing/</id>
+    <published>2019-01-13T23:03:10.000Z</published>
+    <updated>2019-01-13T23:10:12.168Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Free writing</strong><br>I watched the first couple episodes of Double Fine Adventure last night. It’s a documentary about <a href="https://www.kickstarter.com/projects/doublefine/double-fine-adventure" target="_blank" rel="noopener">the first huge Kickstarter</a> and the game that came out of that. The second episode showed Tim Schafer going through the beginning of the game design process and the tools he uses. It turns out that his main tool is dedicated free writing time. He starts a notebook and just free writes until the ideas start to come out. I like this and will do it. I’ll use my bus rides every day as my free writing time.</p><p>My desktop machine is in the middle of a Windows Reset right now, so I’ll start my free writing off as a way to vent some frustration…</p><p>I think about a game that I want to make and the things I want it to have. This normally leads me to a list of a bunch of points, probably like:</p><ul><li>retro shit</li><li>crafting</li><li>farming</li><li>exploration</li><li>discovery</li><li>STYLE</li><li>ATMOSPHERE</li><li>synthy music</li><li>puzzles</li><li>fuschia</li><li>turquoise</li><li>80s</li><li>machines</li><li>character unlocks</li><li>progression</li><li>character fashion</li><li>randomly rolled gear</li><li>etc etc etc</li></ul><p>What the hell do I do with all of that? My favorite games over the last few years have been Breath of the Wild and Red Dead Redemption 2. They share a lot of similar gameplay elements and I find both of them very relaxing and rewarding to play. Immediately, the thing that jumps out about these games is that they’re huge, massive games. The kind of game that takes a big team, years to complete. Obviously, we don’t have those kind of resources, so we need to compromise.</p><p>The compromise has to start with the size of the game, right? None of the world map content in those games is procedurally generated. Everything is carefully crafted to work together. You can really see this in the way the maps are laid out. When you are near points of interest, there are multiple points of interest visible in the distance. As you move through the games, you are always teased with that next thing off in the distance. That seems to me, to be a source of the satisfaction you get from exploring.</p><ol><li>Find some point of interest</li><li>See another point of interest in the distance<br>3to that point of interest</li><li>Satisfaction…</li></ol><p>How tough is that to do in 2d? It seems very tough, but that’s a problem for another day. Anyway, we’re trying to find a compromise, to cut the workload.  Map size is an obvious target. Does a smaller map take away these moments of ‘hey look at that, let’s go there?’ and crush our ATMOSPHERE? Seems like it might. Can you create a large map, hand build the points of interest and then procedurally generate the rest? Maybe even define some placement rules for the points of interest and have those placed by the engine too? Need to think on that.</p><p>BotW and RDR2 are great games, but yhey’re not exactly the style I want. That lies more with games like Hyper Light Drifter, Hotline Miami, or Axiom Verge. More on that later…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Free writing&lt;/strong&gt;&lt;br&gt;I watched the first couple episodes of Double Fine Adventure last night. It’s a documentary about &lt;a hre
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
+    
+  </entry>
   
   <entry>
     <title>Guilty Pleasures?</title>
@@ -37,11 +62,11 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
+      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
+    
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="music" scheme="http://nvn.io/tags/music/"/>
-    
-      <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
     
   </entry>
   
@@ -66,9 +91,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
   </entry>
   
@@ -194,11 +219,11 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
   </entry>
   
@@ -413,11 +438,11 @@
     
       <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -442,15 +467,15 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
-    
       <category term="botw" scheme="http://nvn.io/tags/botw/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -476,11 +501,11 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
+    
+      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
@@ -534,34 +559,6 @@
       <category term="doom" scheme="http://nvn.io/tags/doom/"/>
     
       <category term="article" scheme="http://nvn.io/tags/article/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Item Popups</title>
-    <link href="http://nvn.io/2018/03/26/Item-Popups/"/>
-    <id>http://nvn.io/2018/03/26/Item-Popups/</id>
-    <published>2018-03-26T18:12:22.000Z</published>
-    <updated>2018-08-18T17:52:33.938Z</updated>
-    
-    <content type="html"><![CDATA[<p>Stopping in to drop off a video of the item popups!</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/e6h18/nxmebw" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Stopping in to drop off a video of the item popups!&lt;/p&gt;
-&lt;div style=&quot;width: 100%; height: 0px; position: relative; padding-bottom: 56.250%
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
     
   </entry>
   
