@@ -20,18 +20,18 @@ ga('send', 'pageview');
   
   <title>Stats Management | Vapor Story</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Stats, Modifiers, and Final CalculationsThis is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End">
-<meta name="keywords" content="game design">
+  <meta name="description" content="Here is how I handle stats on game objects in Pastel Future. Begin Step, Step, End StepA little GameMaker context… There are the three Step events in GameMaker 2. Begin Step fires on all objects, then">
+<meta name="keywords" content="game design,gamemaker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Stats Management">
 <meta property="og:url" content="http://nvn.io/2019/02/09/Stats-Management/index.html">
 <meta property="og:site_name" content="Vapor Story">
-<meta property="og:description" content="Stats, Modifiers, and Final CalculationsThis is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End">
+<meta property="og:description" content="Here is how I handle stats on game objects in Pastel Future. Begin Step, Step, End StepA little GameMaker context… There are the three Step events in GameMaker 2. Begin Step fires on all objects, then">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-10T05:01:50.715Z">
+<meta property="og:updated_time" content="2019-02-10T05:23:58.147Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Stats Management">
-<meta name="twitter:description" content="Stats, Modifiers, and Final CalculationsThis is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End">
+<meta name="twitter:description" content="Here is how I handle stats on game objects in Pastel Future. Begin Step, Step, End StepA little GameMaker context… There are the three Step events in GameMaker 2. Begin Step fires on all objects, then">
 <meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;GlitchRockGames">
   
   
@@ -104,7 +104,9 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>Stats, Modifiers, and Final Calculations</strong><br>This is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End Step after the final calculations. I don’t think there’s anything inherently wrong with this, but you end up setting variables in Step and acting on them in End Step. You also effectively lose End Step functionality, since every action is occurring in End Step, leaving you no way to know if you are acting after all per-frame actions are complete.</p>
+        <p>Here is how I handle stats on game objects in Pastel Future.</p>
+<p><strong>Begin Step, Step, End Step</strong><br>A little GameMaker context… There are the three <strong>Step</strong> events in GameMaker 2. Begin Step fires on all objects, then Step, then End Step. The idea is that you know every object has performed its Begin Step if you are in Step. Same goes for Step and End Step.</p>
+<p><strong>Stats, Modifiers, and Final Calculations</strong><br>This is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End Step after the final calculations. I don’t think there’s anything inherently wrong with this, but you end up setting variables in Step and acting on them in End Step. You also effectively lose End Step functionality, since every action is occurring in End Step, leaving you no way to know if you are acting after all per-frame actions are complete.</p>
 <p>We perform all of our logic in Step though. So maybe since we’re normally checking a variable set in Step to decide if we perform an action in End Step, we still make End Step work. Not sure.</p>
 <p><strong>Variable Names</strong><br>Example variables names for Damage stat.</p>
 <ul>
@@ -139,7 +141,7 @@ ga('send', 'pageview');
       <a data-url="http://nvn.io/2019/02/09/Stats-Management/" data-id="cjryfz2fe003460a9drc5ht2c" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/game-design/">game design</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/game-design/">game design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gamemaker/">gamemaker</a></li></ul>
 
     </footer>
   </div>
@@ -198,7 +200,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/art-design/" style="font-size: 18px;">art design</a> <a href="/tags/article/" style="font-size: 11px;">article</a> <a href="/tags/botw/" style="font-size: 11px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/game-design/" style="font-size: 15px;">game design</a> <a href="/tags/gamemaker/" style="font-size: 19px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 12px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/music/" style="font-size: 10px;">music</a> <a href="/tags/shader/" style="font-size: 11px;">shader</a> <a href="/tags/story/" style="font-size: 13px;">story</a> <a href="/tags/tech-design/" style="font-size: 16px;">tech design</a> <a href="/tags/unity/" style="font-size: 11px;">unity</a> <a href="/tags/unreal/" style="font-size: 14px;">unreal</a> <a href="/tags/video/" style="font-size: 17px;">video</a> <a href="/tags/website/" style="font-size: 12px;">website</a>
+      <a href="/tags/art-design/" style="font-size: 18.89px;">art design</a> <a href="/tags/article/" style="font-size: 11.11px;">article</a> <a href="/tags/botw/" style="font-size: 11.11px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12.22px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/game-design/" style="font-size: 15.56px;">game design</a> <a href="/tags/gamemaker/" style="font-size: 20px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 12.22px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11.11px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/music/" style="font-size: 10px;">music</a> <a href="/tags/shader/" style="font-size: 11.11px;">shader</a> <a href="/tags/story/" style="font-size: 13.33px;">story</a> <a href="/tags/tech-design/" style="font-size: 16.67px;">tech design</a> <a href="/tags/unity/" style="font-size: 11.11px;">unity</a> <a href="/tags/unreal/" style="font-size: 14.44px;">unreal</a> <a href="/tags/video/" style="font-size: 17.78px;">video</a> <a href="/tags/website/" style="font-size: 12.22px;">website</a>
     </div>
   </div>
 

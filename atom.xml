@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-02-10T05:01:50.715Z</updated>
+  <updated>2019-02-10T05:23:58.147Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="http://nvn.io/2019/02/09/Stats-Management/"/>
     <id>http://nvn.io/2019/02/09/Stats-Management/</id>
     <published>2019-02-10T04:58:10.000Z</published>
-    <updated>2019-02-10T05:01:50.715Z</updated>
+    <updated>2019-02-10T05:23:58.147Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Stats, Modifiers, and Final Calculations</strong><br>This is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End Step after the final calculations. I don’t think there’s anything inherently wrong with this, but you end up setting variables in Step and acting on them in End Step. You also effectively lose End Step functionality, since every action is occurring in End Step, leaving you no way to know if you are acting after all per-frame actions are complete.</p><p>We perform all of our logic in Step though. So maybe since we’re normally checking a variable set in Step to decide if we perform an action in End Step, we still make End Step work. Not sure.</p><p><strong>Variable Names</strong><br>Example variables names for Damage stat.</p><ul><li>_stat_damage_base</li><li>_stat_damage_mod</li><li>_stat_damage_mult</li><li>_stat_damage: holds final value for use in object actions</li></ul><p><strong>Set base values (Begin Step)</strong><br>Set the base values for all non-aggregate stats in this step. Something like Damage is set to its base value of 10 in this step. However, a stat like Miles Walked would not be set here (would be done in Create), as it is cumulative and only needs initialized once.</p><p>Stat value have three types: BASE, MOD, MULT</p><ul><li>BASE: Set to the base value of a stat. In this example, base Damage is set to 10.</li><li>MOD: Initially, there are no modifiers applied. This is set to 0.</li><li>MULT: The multiplier is always applied in the final calculation, meaning a default value of 1.</li></ul><p><strong>Calculate Modifiers (Step)</strong><br>In the Step event, all modifiers for a given stat are applied to the MOD and MULT variables. This is where items, enemies, world events, etc apply their buffs and debuffs. Let’s give the example of a player wearing gear that gives them +18 damage. The player is also buffed by a world event to have quad damage.</p><ul><li>BASE: The base value, with no modifiers or multipliers.</li><li>MOD: This is an absolute value. In the case of +Damage: 18, MOD is increased by 18</li><li>MULT: This value is multiplied by the sum of the BASE value and MOD value. In the case of a buff such as Quad Damage, MOD would be set to 4.</li></ul><p><strong>Calculate Final Values (End Step)</strong><br>The final Damage value is determined using this formula:</p><blockquote><p>_stat_damage = (_stat_damage_base + _stat_damage_mod) * _stat_damage_mult</p></blockquote><p>Every action we perform that requires a Damage value will use the _stat_damage variable.</p>]]></content>
+    <content type="html"><![CDATA[<p>Here is how I handle stats on game objects in Pastel Future.</p><p><strong>Begin Step, Step, End Step</strong><br>A little GameMaker context… There are the three <strong>Step</strong> events in GameMaker 2. Begin Step fires on all objects, then Step, then End Step. The idea is that you know every object has performed its Begin Step if you are in Step. Same goes for Step and End Step.</p><p><strong>Stats, Modifiers, and Final Calculations</strong><br>This is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End Step after the final calculations. I don’t think there’s anything inherently wrong with this, but you end up setting variables in Step and acting on them in End Step. You also effectively lose End Step functionality, since every action is occurring in End Step, leaving you no way to know if you are acting after all per-frame actions are complete.</p><p>We perform all of our logic in Step though. So maybe since we’re normally checking a variable set in Step to decide if we perform an action in End Step, we still make End Step work. Not sure.</p><p><strong>Variable Names</strong><br>Example variables names for Damage stat.</p><ul><li>_stat_damage_base</li><li>_stat_damage_mod</li><li>_stat_damage_mult</li><li>_stat_damage: holds final value for use in object actions</li></ul><p><strong>Set base values (Begin Step)</strong><br>Set the base values for all non-aggregate stats in this step. Something like Damage is set to its base value of 10 in this step. However, a stat like Miles Walked would not be set here (would be done in Create), as it is cumulative and only needs initialized once.</p><p>Stat value have three types: BASE, MOD, MULT</p><ul><li>BASE: Set to the base value of a stat. In this example, base Damage is set to 10.</li><li>MOD: Initially, there are no modifiers applied. This is set to 0.</li><li>MULT: The multiplier is always applied in the final calculation, meaning a default value of 1.</li></ul><p><strong>Calculate Modifiers (Step)</strong><br>In the Step event, all modifiers for a given stat are applied to the MOD and MULT variables. This is where items, enemies, world events, etc apply their buffs and debuffs. Let’s give the example of a player wearing gear that gives them +18 damage. The player is also buffed by a world event to have quad damage.</p><ul><li>BASE: The base value, with no modifiers or multipliers.</li><li>MOD: This is an absolute value. In the case of +Damage: 18, MOD is increased by 18</li><li>MULT: This value is multiplied by the sum of the BASE value and MOD value. In the case of a buff such as Quad Damage, MOD would be set to 4.</li></ul><p><strong>Calculate Final Values (End Step)</strong><br>The final Damage value is determined using this formula:</p><blockquote><p>_stat_damage = (_stat_damage_base + _stat_damage_mod) * _stat_damage_mult</p></blockquote><p>Every action we perform that requires a Damage value will use the _stat_damage variable.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;Stats, Modifiers, and Final Calculations&lt;/strong&gt;&lt;br&gt;This is the basic system for applying stats to an object. The part I’m not s
+        &lt;p&gt;Here is how I handle stats on game objects in Pastel Future.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Begin Step, Step, End Step&lt;/strong&gt;&lt;br&gt;A little GameMaker con
       
     
     </summary>
@@ -38,6 +39,8 @@
     
     
       <category term="game design" scheme="http://nvn.io/tags/game-design/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
   </entry>
   
