@@ -75,6 +75,62 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-Twin-Peaks-and-Notes" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/06/Twin-Peaks-and-Notes/" class="article-date">
+  <time datetime="2018-01-07T01:27:16.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/06/Twin-Peaks-and-Notes/">Twin Peaks and Notes</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Inspiration</strong><br>I’ve been reading <a href="https://www.amazon.com/Secret-History-Twin-Peaks-Novel/dp/1250075580" target="_blank" rel="noopener">The Secret History of Twin Peaks</a>, and it’s really amazing to me how Mark Frost is able to take the story of TP all the way back to the days of Lewis and Clark.</p>
+<blockquote>
+<p>A vastly layered, wide-ranging history that deepens the mysteries of the iconic town in ways that will thrill disciples of the original series and will prep fans for the upcoming SHOWTIME series like nothing else out there.</p>
+<p>Four original Twin Peaks cast members who are appearing in the new Twin Peaks for SHOWTIME - Kyle MacLachlan, Russ Tamblyn, Michael Horse, and David Patrick Kelly - join three new actors - Amy Shiels, Robert Knepper, and James Morrison - to voice the audiobook edition of the novel along with cocreator Mark Frost and original cast member Chris Mulkey.</p>
+</blockquote>
+<p><strong>Game Design</strong><br>I want to share some notes I’ve been keeping, just to show some things I’m looking at…</p>
+<blockquote><p><strong>Weapon Design</strong><br>Need to implement weapon states<br>if a weapon is reloading, call Reload()<br>if a weapon is firing, call Fire()<br>and; Idle(), Empty()</p>
+<p>Prevent having to set explicit timers for things by using the states, and tracking the amount of time spent in each state</p>
+<p><strong>Sound Effect Component</strong><br>Build a way to load a ‘sound bank’ which will be a group of related sounds. For example,<br>firing sounds for the SMG, would be one bank. Then, have a way to play a random sound from<br>an specified bank.</p>
+<p>During content load, individual weapon configuration files are read to create the weapon banks.</p>
+<p><strong>World Manager</strong><br>Some things to think about for world management…</p>
+<ol>
+<li>Do we need managers for related entities? ie; Items (drops, gear, weapons, mats), Projectiles (bullets, casts, bombs), Actors (player, enemies, NPCS)</li>
+<li>Is the world instanced or static? What do we get from either method?</li>
+<li>When do we start thinking about serialization?</li>
+</ol>
+<p><strong>Misc</strong><br>Size = how big something is or how many something can hold<br>Count = how many something currently has<br>ex:<br>MagSize = how many rounds a magazine can hold<br>MagCount = how many rounds a magazine currently holds</p>
+</blockquote>
+
+      
+      &nbsp;
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nvn.io/2018/01/06/Twin-Peaks-and-Notes/" data-id="cjryfz2g8005760a9i3ru5tax" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-HUD-and-Pictures" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/03/HUD-and-Pictures/" class="article-date">
@@ -106,7 +162,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2018/01/03/HUD-and-Pictures/" data-id="cjrr3r7v000144oa994u3ml8f" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2018/01/03/HUD-and-Pictures/" data-id="cjryfz2eq001e60a9wyu2vlud" class="article-share-link">Share</a>
       
       
     </footer>
@@ -146,7 +202,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/28/Inventory/" data-id="cjrr3r7v5001h4oa9gd7mxyt1" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/28/Inventory/" data-id="cjryfz2ev001p60a91nqstza6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
@@ -189,7 +245,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/26/Item-Spawning/" data-id="cjrr3r7v8001p4oa98ps6ve2k" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/26/Item-Spawning/" data-id="cjryfz2ey001x60a9qzy9kd54" class="article-share-link">Share</a>
       
       
     </footer>
@@ -244,7 +300,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/24/Dependency-Injection/" data-id="cjrr3r7ul00084oa98fzuu5ib" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/24/Dependency-Injection/" data-id="cjryfz2eg000o60a9omn8po4t" class="article-share-link">Share</a>
       
       
     </footer>
@@ -287,7 +343,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/21/General-Updates/" data-id="cjrr3r7ux000v4oa9a0pxfb1w" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/21/General-Updates/" data-id="cjryfz2em001260a94aqeohtx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -331,7 +387,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/18/Item-Factory/" data-id="cjrr3r7ve00264oa9ycxk4362" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/18/Item-Factory/" data-id="cjryfz2f3002e60a9wo9rjcm1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech-design/">tech design</a></li></ul>
@@ -373,7 +429,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/17/No-Small-Steps/" data-id="cjrr3r7vg002b4oa913d6to6v" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/17/No-Small-Steps/" data-id="cjryfz2f5002g60a9l9ebu0oa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -415,7 +471,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/16/Input-Innnnnput/" data-id="cjrr3r7v3001c4oa93apw962d" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/16/Input-Innnnnput/" data-id="cjryfz2es001k60a9do5e1wtz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -454,54 +510,7 @@ ga('send', 'pageview');
       &nbsp;
     </div>
     <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/15/A-Day-Off/" data-id="cjrr3r7tr00004oa9446kc7fb" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Breadth-then-Depth" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/14/Breadth-then-Depth/" class="article-date">
-  <time datetime="2017-12-15T00:28:24.000Z" itemprop="datePublished">2017-12-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/14/Breadth-then-Depth/">Breadth, then Depth</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>Game Design</strong><br>One new edict: <strong>Breadth, then depth.</strong><br>Basically, avoid getting stuck in paralysis analysis hell. I’m going to make a concerted effort to make things work only as much as I need them to. Once a component is established and has gone beyond the design stage, I can start implementing new features. Don’t wax your car if it hasn’t been put together yet!</p>
-<p><strong>Technical Design</strong><br>I was pumped up to start coding today. The little breakthrough I had last night helped boost my hype levels way up, so I started working on an input component, which brought the hype back down to earth. This component will allow the game to read button presses, trigger pulls, stick moves, etc, from the gamepad, as well as determine if states have changed since the last Update() tick. Playing around with input brought about the need to draw some text on the screen, so I began on the Debug component too. Today is the first (of what I’m sure will be many) days where I will be shutting down with a project that fails to build.</p>
-<p>I’ve been spending a lot of time reading about game design, here are some of the things I read today, number three will bring tears to your eyes!</p>
-<ul>
-<li>An online book, <a href="http://gameprogrammingpatterns.com/component.html" target="_blank" rel="noopener">Game Programming Patterns</a>, has a informative chapter the explores some ways to decouple your game components.</li>
-<li>This <a href="https://gamedev.stackexchange.com/a/24301" target="_blank" rel="noopener">answer on stackoverflow</a> that goes into why using the same texture is important when calling SpriteBatch is good. It makes me think about the right way to group sprite within spritesheets.</li>
-<li>If you want to put all of those cores in your new Ryzen to use, <a href="https://www.codeproject.com/Articles/7933/Smart-Thread-Pool" target="_blank" rel="noopener">Smart Thread Pools</a> are a way you can do that.</li>
-<li>The <a href="https://www.redblobgames.com/" target="_blank" rel="noopener">Red Blob Games blog</a> has some great articles on various game programming topics.</li>
-</ul>
-
-      
-      &nbsp;
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://nvn.io/2017/12/14/Breadth-then-Depth/" data-id="cjrr3r7ug00044oa9ufhbuv6e" class="article-share-link">Share</a>
+      <a data-url="http://nvn.io/2017/12/15/A-Day-Off/" data-id="cjryfz29r000060a9rxp4zmj1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -530,6 +539,10 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2019/02/09/Stats-Management/">Stats Management</a>
+          </li>
+        
+          <li>
             <a href="/2019/02/08/Good-Reading/">Good Reading (updated)</a>
           </li>
         
@@ -545,10 +558,6 @@ ga('send', 'pageview');
             <a href="/2019/01/02/Guilty-Pleasures/">Guilty Pleasures?</a>
           </li>
         
-          <li>
-            <a href="/2019/01/01/My-Favorite-Number-is-19/">My Favorite Number is 19</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -558,7 +567,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/art-design/" style="font-size: 17.78px;">art design</a> <a href="/tags/article/" style="font-size: 11.11px;">article</a> <a href="/tags/botw/" style="font-size: 11.11px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12.22px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/game-design/" style="font-size: 14.44px;">game design</a> <a href="/tags/gamemaker/" style="font-size: 18.89px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 12.22px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11.11px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/music/" style="font-size: 10px;">music</a> <a href="/tags/shader/" style="font-size: 11.11px;">shader</a> <a href="/tags/story/" style="font-size: 13.33px;">story</a> <a href="/tags/tech-design/" style="font-size: 15.56px;">tech design</a> <a href="/tags/unity/" style="font-size: 11.11px;">unity</a> <a href="/tags/unreal/" style="font-size: 14.44px;">unreal</a> <a href="/tags/video/" style="font-size: 16.67px;">video</a> <a href="/tags/website/" style="font-size: 12.22px;">website</a>
+      <a href="/tags/art-design/" style="font-size: 18px;">art design</a> <a href="/tags/article/" style="font-size: 11px;">article</a> <a href="/tags/botw/" style="font-size: 11px;">botw</a> <a href="/tags/construct/" style="font-size: 10px;">construct</a> <a href="/tags/destiny/" style="font-size: 12px;">destiny</a> <a href="/tags/doom/" style="font-size: 10px;">doom</a> <a href="/tags/engine/" style="font-size: 20px;">engine</a> <a href="/tags/game-design/" style="font-size: 15px;">game design</a> <a href="/tags/gamemaker/" style="font-size: 19px;">gamemaker</a> <a href="/tags/holiday/" style="font-size: 12px;">holiday</a> <a href="/tags/irl/" style="font-size: 10px;">irl</a> <a href="/tags/lowpoly/" style="font-size: 10px;">lowpoly</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/magica-voxel/" style="font-size: 11px;">magica voxel</a> <a href="/tags/monogame/" style="font-size: 10px;">monogame</a> <a href="/tags/music/" style="font-size: 10px;">music</a> <a href="/tags/shader/" style="font-size: 11px;">shader</a> <a href="/tags/story/" style="font-size: 13px;">story</a> <a href="/tags/tech-design/" style="font-size: 16px;">tech design</a> <a href="/tags/unity/" style="font-size: 11px;">unity</a> <a href="/tags/unreal/" style="font-size: 14px;">unreal</a> <a href="/tags/video/" style="font-size: 17px;">video</a> <a href="/tags/website/" style="font-size: 12px;">website</a>
     </div>
   </div>
 
@@ -567,7 +576,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">13</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">13</span></li></ul>
     </div>
   </div>
 
