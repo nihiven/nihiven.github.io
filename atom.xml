@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-02-10T05:23:58.147Z</updated>
+  <updated>2019-03-25T00:35:43.557Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -17,10 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>It&#39;s A Process</title>
+    <link href="http://nvn.io/2019/03/24/It-s-A-Process/"/>
+    <id>http://nvn.io/2019/03/24/It-s-A-Process/</id>
+    <published>2019-03-25T00:26:59.000Z</published>
+    <updated>2019-03-25T00:35:43.557Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Development Update</strong><br>I’m working on the integration of the items/stats/cooldown systems. Specifically, adding affixes to items that will alter player stats and cooldowns. Some examples; increases player’s dash duration by 10%, decrease dash cooldown by 25%, increase speed by 25%. It works, nothing else to report. The next step is to work on a system for showing the cooldowns on screen. That will be the first major piece of the HUD that I write. I have an idea how I want the HUD layed out, it’s designed around the fact that you are a robot and your HUD is really just part of your vision. Why does a robot need a HUD? It’s just for the robot’s developers to do some debugging I guess. The T-800 has a HUD…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Development Update&lt;/strong&gt;&lt;br&gt;I’m working on the integration of the items/stats/cooldown systems. Specifically, adding affixes t
+      
+    
+    </summary>
+    
+      <category term="pastel future" scheme="http://nvn.io/categories/pastel-future/"/>
+    
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Stats Management</title>
     <link href="http://nvn.io/2019/02/09/Stats-Management/"/>
     <id>http://nvn.io/2019/02/09/Stats-Management/</id>
-    <published>2019-02-10T04:58:10.000Z</published>
+    <published>2019-02-10T07:58:10.000Z</published>
     <updated>2019-02-10T05:23:58.147Z</updated>
     
     <content type="html"><![CDATA[<p>Here is how I handle stats on game objects in Pastel Future.</p><p><strong>Begin Step, Step, End Step</strong><br>A little GameMaker context… There are the three <strong>Step</strong> events in GameMaker 2. Begin Step fires on all objects, then Step, then End Step. The idea is that you know every object has performed its Begin Step if you are in Step. Same goes for Step and End Step.</p><p><strong>Stats, Modifiers, and Final Calculations</strong><br>This is the basic system for applying stats to an object. The part I’m not sure about, is when using this method, you have to perform all of your actions in End Step after the final calculations. I don’t think there’s anything inherently wrong with this, but you end up setting variables in Step and acting on them in End Step. You also effectively lose End Step functionality, since every action is occurring in End Step, leaving you no way to know if you are acting after all per-frame actions are complete.</p><p>We perform all of our logic in Step though. So maybe since we’re normally checking a variable set in Step to decide if we perform an action in End Step, we still make End Step work. Not sure.</p><p><strong>Variable Names</strong><br>Example variables names for Damage stat.</p><ul><li>_stat_damage_base</li><li>_stat_damage_mod</li><li>_stat_damage_mult</li><li>_stat_damage: holds final value for use in object actions</li></ul><p><strong>Set base values (Begin Step)</strong><br>Set the base values for all non-aggregate stats in this step. Something like Damage is set to its base value of 10 in this step. However, a stat like Miles Walked would not be set here (would be done in Create), as it is cumulative and only needs initialized once.</p><p>Stat value have three types: BASE, MOD, MULT</p><ul><li>BASE: Set to the base value of a stat. In this example, base Damage is set to 10.</li><li>MOD: Initially, there are no modifiers applied. This is set to 0.</li><li>MULT: The multiplier is always applied in the final calculation, meaning a default value of 1.</li></ul><p><strong>Calculate Modifiers (Step)</strong><br>In the Step event, all modifiers for a given stat are applied to the MOD and MULT variables. This is where items, enemies, world events, etc apply their buffs and debuffs. Let’s give the example of a player wearing gear that gives them +18 damage. The player is also buffed by a world event to have quad damage.</p><ul><li>BASE: The base value, with no modifiers or multipliers.</li><li>MOD: This is an absolute value. In the case of +Damage: 18, MOD is increased by 18</li><li>MULT: This value is multiplied by the sum of the BASE value and MOD value. In the case of a buff such as Quad Damage, MOD would be set to 4.</li></ul><p><strong>Calculate Final Values (End Step)</strong><br>The final Damage value is determined using this formula:</p><blockquote><p>_stat_damage = (_stat_damage_base + _stat_damage_mod) * _stat_damage_mult</p></blockquote><p>Every action we perform that requires a Damage value will use the _stat_damage variable.</p>]]></content>
@@ -74,7 +99,7 @@
     <title>Pastel Sunrise</title>
     <link href="http://nvn.io/2019/01/27/Pastel-Sunrise/"/>
     <id>http://nvn.io/2019/01/27/Pastel-Sunrise/</id>
-    <published>2019-01-28T04:03:54.000Z</published>
+    <published>2019-01-28T07:03:54.000Z</published>
     <updated>2019-01-28T05:25:41.650Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Pastel Sunrise</strong></p><p>I was working on some ideas for a company or game intro and got on to the idea of a Pastel Sunrise. A pink sun, rising over a black horizon. This is a quick attempt at that, in engine.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/g1e2r/evnnbf" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><p>While I was thinking about the sunrise, I had an idea to mimic the text style from the intro of The Terminator. That was pretty fun to do. I’ve worked out a way to create different styles and plug them in as needed. I’m thinking that this is how I’m going to do the HUD text, which I want to have an interactive element to it. I want it to be able to ask you questions and request a multiple choice response. Here is a short video of the Terminator text.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/1c3bi/gwrvdv" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><p><strong>Writing a Story</strong><br>The original Vapor Story had a fairly fleshed out story that was driven by my desire to explain some of the unkown or mysterious events on Earth with story elements. I had seven or eight that I really liked. At some point though, I fell out of love with that story. I was having a lot of trouble tying the story elements to the type of gameplay I wanted in Vapor Story. As disappointing as that was, I am having a blast writing the new story. I feel like being able to make the game activites seem like a natural part of the story is important to a good design. The name Pastel Future is rooted in both the story and the mechanics of the game. I’m very happy with it.</p><p><strong>Technology</strong><br>Here is something from an earlier post:</p><blockquote><p>Right now, the scope of Pastel Future is more than I can handle. An immediate goal is to determine what stays and what goes.</p></blockquote><p>That’s a big thing. I still struggle with the decision to use GameMaker Studio for Pastel Future. Not that I don’t like it, but I keep going back to a 2D not having that same feeling of immersion and scale as a 3D game. The Unreal Engine is so accessable… it’s keeps calling me. How do I compare the different requirements for assets between GameMaker and Unreal Engine? A big advantage that Unreal has is that you can go into the marketplace and buy a skinned, rigged, and animated model. Then start programming with it in just a few minutes. It won’t be what you release with the game, but there is something for you to work with VERY quickly. Contrast that with getting a test character in Game Maker. This usually amounts to searching Google for spritesheets that have animations that kind of resemble what you’re looking to do. Unreal seems better there.</p><p>A big hangup with Unreal is that I’m not very strong in C++. You can do a lot with blueprints in Unreal, but eventually you’ll need to start writing code. Simple things in game turn into massive spaghetti looking blueprints pretty quickly and I think most pro devs do their final logic in C++. Maybe a middle ground like <a href="http://skookumscript.com/" target="_blank" rel="noopener">Skookum script</a> can help with this? Really, I highly doubt I can do final art for either engine, so I guess cost is a big factor too. For your money, wihch one is better?</p><p>I leave you with the Pastel Sunrise!</p><center><img src="/images/pastelSunrise.png" alt="Pastel Sunrise" title="Pastel Sunrise"></center>]]></content>
@@ -104,7 +129,7 @@
     <title>Free Writing</title>
     <link href="http://nvn.io/2019/01/13/Free-Writing/"/>
     <id>http://nvn.io/2019/01/13/Free-Writing/</id>
-    <published>2019-01-13T23:03:10.000Z</published>
+    <published>2019-01-14T02:03:10.000Z</published>
     <updated>2019-01-13T23:10:12.168Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Free writing</strong><br>I watched the first couple episodes of Double Fine Adventure last night. It’s a documentary about <a href="https://www.kickstarter.com/projects/doublefine/double-fine-adventure" target="_blank" rel="noopener">the first huge Kickstarter</a> and the game that came out of that. The second episode showed Tim Schafer going through the beginning of the game design process and the tools he uses. It turns out that his main tool is dedicated free writing time. He starts a notebook and just free writes until the ideas start to come out. I like this and will do it. I’ll use my bus rides every day as my free writing time.</p><p>My desktop machine is in the middle of a Windows Reset right now, so I’ll start my free writing off as a way to vent some frustration…</p><p>I think about a game that I want to make and the things I want it to have. This normally leads me to a list of a bunch of points, probably like:</p><ul><li>retro shit</li><li>crafting</li><li>farming</li><li>exploration</li><li>discovery</li><li>STYLE</li><li>ATMOSPHERE</li><li>synthy music</li><li>puzzles</li><li>fuschia</li><li>turquoise</li><li>80s</li><li>machines</li><li>character unlocks</li><li>progression</li><li>character fashion</li><li>randomly rolled gear</li><li>etc etc etc</li></ul><p>What the hell do I do with all of that? My favorite games over the last few years have been Breath of the Wild and Red Dead Redemption 2. They share a lot of similar gameplay elements and I find both of them very relaxing and rewarding to play. Immediately, the thing that jumps out about these games is that they’re huge, massive games. The kind of game that takes a big team, years to complete. Obviously, we don’t have those kind of resources, so we need to compromise.</p><p>The compromise has to start with the size of the game, right? None of the world map content in those games is procedurally generated. Everything is carefully crafted to work together. You can really see this in the way the maps are laid out. When you are near points of interest, there are multiple points of interest visible in the distance. As you move through the games, you are always teased with that next thing off in the distance. That seems to me, to be a source of the satisfaction you get from exploring.</p><ol><li>Find some point of interest</li><li>See another point of interest in the distance<br>3to that point of interest</li><li>Satisfaction…</li></ol><p>How tough is that to do in 2d? It seems very tough, but that’s a problem for another day. Anyway, we’re trying to find a compromise, to cut the workload.  Map size is an obvious target. Does a smaller map take away these moments of ‘hey look at that, let’s go there?’ and crush our ATMOSPHERE? Seems like it might. Can you create a large map, hand build the points of interest and then procedurally generate the rest? Maybe even define some placement rules for the points of interest and have those placed by the engine too? Need to think on that.</p><p>BotW and RDR2 are great games, but yhey’re not exactly the style I want. That lies more with games like Hyper Light Drifter, Hotline Miami, or Axiom Verge. More on that later…</p>]]></content>
@@ -129,7 +154,7 @@
     <title>Guilty Pleasures?</title>
     <link href="http://nvn.io/2019/01/02/Guilty-Pleasures/"/>
     <id>http://nvn.io/2019/01/02/Guilty-Pleasures/</id>
-    <published>2019-01-03T03:39:29.000Z</published>
+    <published>2019-01-03T06:39:29.000Z</published>
     <updated>2019-01-03T04:06:31.450Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Good Music</strong><br>I don’t know why Spotify calls this a ‘Guilty Pleases’ playlist. These are good songs! Maybe not ALL of them, but most.</p><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4pUKG1kS0Ac" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><p><strong>War Room</strong><br>I have a war room setup going in my dining room. I should be streaming this! Today I’m whipping up a crafting sample: run around, pick up items, use those items to craft new items.</p><p><strong>Distilled</strong><br>In my first project, I’m going to have some fun with crafting. Building recipes, checking item requirements, unlocking recipes and actions based on item inventory… all on the list for this project. I’ll also figure out how to populate an area with certain items, given a target density and list of items. I picture creating areas on the map where certain types of plants grow, then over time, plants will spring up in the designated area until a certain regional species density is reached. As you pick plants, new ones grow back to fill the region. This will require instancing plant objects and tracking overall population. Maybe a plant factory?</p>]]></content>
@@ -158,7 +183,7 @@
     <title>My Favorite Number is 19</title>
     <link href="http://nvn.io/2019/01/01/My-Favorite-Number-is-19/"/>
     <id>http://nvn.io/2019/01/01/My-Favorite-Number-is-19/</id>
-    <published>2019-01-02T01:38:51.000Z</published>
+    <published>2019-01-02T04:38:51.000Z</published>
     <updated>2019-01-28T04:52:53.861Z</updated>
     
     <content type="html"><![CDATA[<p><strong>2019</strong><br>Every year I start off looking to do better than last year. I put in a solid six months of work on the Vapor Project last year, but things took a nose dive around my birthday.</p><p><strong>Pastel Future</strong><br>Crafting, building, farming, fighting, walking, talking, and exploring all played a part in the evolution of the vapor project. Pastel Future distills these activities into an enjoyable and inspiring experience, while shading everything with a bit of nostalgia and a hi-tech fantasy. Right now, the scope of Pastel Future is more than I can handle. An immediate goal is to determine what stays and what goes.</p><p><strong>My Future</strong><br>It feels good to be thinking about and working on my game again. So yes, I will do better this year. This year, GlitchRock Games will become what I’ve always wanted it to be: a game studio.</p>]]></content>
@@ -185,7 +210,7 @@
     <title>Back in the Game</title>
     <link href="http://nvn.io/2018/12/29/Back-in-the-Game/"/>
     <id>http://nvn.io/2018/12/29/Back-in-the-Game/</id>
-    <published>2018-12-29T21:09:35.000Z</published>
+    <published>2018-12-30T00:09:35.000Z</published>
     <updated>2019-01-03T03:59:26.507Z</updated>
     
     <content type="html"><![CDATA[<p>I’m trying to get back into the programming / creative groove. I’m going to do some small projects to help that along. First, I’ll make something to do with crafting. Maybe just a crafting interface? Something like a ‘Pasetllizer’ shader would be cool too.</p>]]></content>
@@ -210,7 +235,7 @@
     <title>Merry Christmas!</title>
     <link href="http://nvn.io/2018/12/24/Another-Year/"/>
     <id>http://nvn.io/2018/12/24/Another-Year/</id>
-    <published>2018-12-24T14:10:46.000Z</published>
+    <published>2018-12-24T17:10:46.000Z</published>
     <updated>2018-12-24T14:56:21.408Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>So this is Christmas and what have you done<br>Another year over, a new one just begun<br>And so this is Christmas, I hope you have fun<br>The near and the dear ones, the old and the young<br>A very merry Christmas and a happy new year<br>Let’s hope it’s a good one without any fears<br>And so this is Christmas for weak and for strong<br>The rich and the poor ones, the road is so long<br>And so happy Christmas for black and for white<br>For yellow and red ones let’s stop all the fights<br>A very merry Christmas and a happy new year<br>Let’s hope it’s a good one without any fear<br>And so this is Christmas and what have we done<br>Another year over, a new one just begun<br>And so happy Christmas we hope you have fun<br>The near and the dear ones, the old and the young<br>A very merry Christmas and a happy new year<br>Let’s hope it’s a good one without any fear<br>And so this is Christmas and what have we done<br>Another year over, a new one just begun</p></blockquote><p><div align="center"><img src="/images/Christmastree.gif"></div></p>]]></content>
@@ -236,7 +261,7 @@
     <title>Pastel Future</title>
     <link href="http://nvn.io/2018/09/11/Pastel-Future/"/>
     <id>http://nvn.io/2018/09/11/Pastel-Future/</id>
-    <published>2018-09-11T23:59:00.000Z</published>
+    <published>2018-09-12T02:59:00.000Z</published>
     <updated>2018-12-29T21:12:10.263Z</updated>
     
     <content type="html"><![CDATA[<p>I’ve been working on a world that takes place in an alternate 2005. In this version of the world, the 90s were not the decade of grunge, blonde tips did not exist, and Pulp Fiction was a neon-noir film masterpiece. On the eve of Y2K, instead of hiding in their basements with a two year supply of canned food, people jack in and build a collective experience that accelerates the world’s technology growth exponentially.</p><p>Steve Jobs introduces the Apple Watch over a decade earlier than we are used to. It includes a feature that covers you in a protective pill shapped bubble from head to toe; very important when Infection is on the rise! Meanwhile, Quantel combines forces with Lecktrik Systems to create the world’s first line of smart clothing, with Cell Touch technology.</p><p>Miami Vice is longest running show of all-time and Don Johnson is the highest paid actor in the world. Jan Hammer tops the charts on an annual basis. What a world!</p><h2 id="Telling-a-Story"><a href="#Telling-a-Story" class="headerlink" title="Telling a Story"></a>Telling a Story</h2><p>I’ve written some short stories before, but nothing on the scale of this game. I have a lot of threads that I need to tie together. The story is a variation on the Hero’s Journey:</p><blockquote><p>In narratology and comparative mythology, the monomyth, or the hero’s journey, is the common template of a broad category of tales that involve a hero who goes on an adventure, and in a decisive crisis wins a victory, and then comes home changed or transformed.</p></blockquote><p>You can read more about <a href="https://en.wikipedia.org/wiki/Hero%27s_journey" target="_blank" rel="noopener">the Hero’s Journey on Wikipedia</a>.</p><h2 id="Black-Market-Clothing"><a href="#Black-Market-Clothing" class="headerlink" title="Black Market Clothing"></a>Black Market Clothing</h2><p>The first quest in the works has you getting involved in the black market. In our new world, certain types of clothing are banned because of how they are used in the world of recreational drugs. This particular item that you are searching for has a combination of Cell Touch and Quantel properties, which allow it two do two things:</p><ul><li>Transport matter from a remote broadcast system to the garment’s internal molecular delivery system.</li><li>Transfer matter and data into the skin at the molecular level.</li></ul><p> Enterprising parties use these two properties to facilitate the remote delivery of illicit substances. A string of underground clubs are built around the use of this type of clothing. These clubs are very exclusive and highly illegal. Your client wants to obtain some of the clothing required to attend such clubs and since she has something you need, you’re on the hook to find something she can wear.</p>]]></content>
@@ -261,7 +286,7 @@
     <title>Summer in the City</title>
     <link href="http://nvn.io/2018/08/29/Summer-in-the-City/"/>
     <id>http://nvn.io/2018/08/29/Summer-in-the-City/</id>
-    <published>2018-08-29T18:45:21.000Z</published>
+    <published>2018-08-29T21:45:21.000Z</published>
     <updated>2018-12-29T21:12:30.913Z</updated>
     
     <content type="html"><![CDATA[<p>I’m using a set of modular city assests to mock up a sample map. I’m going to set up some interactions with some city-dwellers and work on some quest stuff with them. Maybe there is a gunsmith to build me a Sleeper?</p><p><img src="/images/Sci-Fi-city-samples.jpg" alt="Vapor City?"></p>]]></content>
@@ -286,10 +311,10 @@
     <title>The TODO List</title>
     <link href="http://nvn.io/2018/08/21/The-TODO-List/"/>
     <id>http://nvn.io/2018/08/21/The-TODO-List/</id>
-    <published>2018-08-21T22:02:08.000Z</published>
+    <published>2018-08-22T01:02:08.000Z</published>
     <updated>2018-08-22T03:14:02.270Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Project Management</strong><br>I love lists. They keep me on track and they let me dump stuff out of my head so I have some room to think. Trello helps me make lists, so I love Trello and it’s simple and straight-forward design. I had more things to say about Trello, but I forget them before I could make a list.</p><div align="center"><img src="/images/trello-20180821.png" alt="The TODO List"></div><p><strong>Tech Design</strong><br>I’m building item pickup functionality, using the voxel Sleeper Simulant to test. Here are the object so far, each lower level object is a sub-class of the object above it:</p><ul><li>Pickup Primal<ul><li>Pickup Weapon Primal<ul><li>Pickup Weapon Sleeper Simulant</li></ul></li><li>Pickup Bonus Primal<ul><li>Pickup Bonus GloDots</li><li>Pickup Bonus Credits</li></ul></li><li>Pickup Ammo Primal<ul><li>Pickup Ammo Primary</li><li>Pickup Ammo Precision</li><li>Pickup Ammo Heavy</li></ul></li></ul></li></ul><p>Primal objects must be sub-classed. The <strong>Pickup Weapon Primal</strong> describes the weapon and defines available properties (reserve size, clip size, equip speed, mesh, icon, etc) and <strong>Pickup Weapon Sleeper Simulant</strong> defines the values for these properties. This is pretty standard <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank" rel="noopener">object-oriented programming</a>. The amazing part to me is how intuitive it is to implement this design within the Unreal engine. Here’s a sample of the Sleeper’s item popup:</p><table><tbody><tr><td><img src="/images/examiningSleeper.jpg" alt=""></td><td><img src="/images/examiningSleeper2.jpg" alt=""></td></tr></tbody></table><p>These entries always take me longer to write than I think they will. I’m going to do one every three days or so.</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Project Management</strong><br>I love lists. They keep me on track and they let me dump stuff out of my head so I have some room to think. Trello helps me make lists, so I love Trello and it’s simple and straight-forward design. I had more things to say about Trello, but I forget them before I could make a list.</p><div align="center"><img src="/images/trello-20180821.png" alt="The TODO List"></div><p><strong>Tech Design</strong><br>I’m building item pickup functionality, using the voxel Sleeper Simulant to test. Here are the object so far, each lower level object is a sub-class of the object above it:</p><ul><li>Pickup Primal<ul><li>Pickup Weapon Primal<ul><li>Pickup Weapon Sleeper Simulant</li></ul></li><li>Pickup Bonus Primal<ul><li>Pickup Bonus GloDots</li><li>Pickup Bonus Credits</li></ul></li><li>Pickup Ammo Primal<ul><li>Pickup Ammo Primary</li><li>Pickup Ammo Precision</li><li>Pickup Ammo Heavy</li></ul></li></ul></li></ul><p>Primal objects must be sub-classed. The <strong>Pickup Weapon Primal</strong> describes the weapon and defines available properties (reserve size, clip size, equip speed, mesh, icon, etc) and <strong>Pickup Weapon Sleeper Simulant</strong> defines the values for these properties. This is pretty standard <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank" rel="noopener">object-oriented programming</a>. The amazing part to me is how intuitive it is to implement this design within the Unreal engine. Here’s a sample of the Sleeper’s item popup:</p><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><img src="/images/examiningSleeper.jpg" alt=""></td><td><img src="/images/examiningSleeper2.jpg" alt=""></td></tr></tbody></table><p>These entries always take me longer to write than I think they will. I’m going to do one every three days or so.</p>]]></content>
     
     <summary type="html">
     
@@ -303,9 +328,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -315,7 +340,7 @@
     <title>Pill Baxton</title>
     <link href="http://nvn.io/2018/08/19/Pill-Baxton/"/>
     <id>http://nvn.io/2018/08/19/Pill-Baxton/</id>
-    <published>2018-08-19T23:23:33.000Z</published>
+    <published>2018-08-20T02:23:33.000Z</published>
     <updated>2018-08-19T23:46:43.979Z</updated>
     
     <content type="html"><![CDATA[<p>I had a dream not too long ago about a scene from Weird Sciene. It’s the one where Chet is berating Wyatt in the hallway after Gary’s night on the town. There was a lot of weird stuff going on though. Colors were strange and vivid, things were moving around. It reminded me of <a href="/2018/02/18/Dream-State-Pittsburgh/" title="this other dream I had about Pittsburgh">this other dream I had about Pittsburgh</a>. I did my best to represent it in the picture below.</p><div align="center"><img src="/images/PillBaxton.jpg" alt="ｐｉｌｌ_ｂａｘｔｏｎ"></div>]]></content>
@@ -340,10 +365,10 @@
     <title>GlitchRock Logo</title>
     <link href="http://nvn.io/2018/08/18/GlitchRock-Logo/"/>
     <id>http://nvn.io/2018/08/18/GlitchRock-Logo/</id>
-    <published>2018-08-18T15:41:01.000Z</published>
+    <published>2018-08-18T18:41:01.000Z</published>
     <updated>2018-08-18T17:16:55.009Z</updated>
     
-    <content type="html"><![CDATA[<p>I’m working on a logo for GlitchRock Games. I want something that is simple and kind of retro, recognizable, and related to the GlitchRock name in literal way. I like the idea of this simple outline of a rock. The original GlitchRock was taken from a game screenshot, Call of Duty or something like that. The idea of having it glitched out is kind of cool. I can see the simple rock being a good watermark, but as a logo, it’s missing something. Will anyone know what it is unless it’s used in conjuction with the name? Maybe it needs some shading or something.</p><table><tbody><tr><td><img src="/images/TheOriginalGlitchRock.png" alt="OG GlitchRock"></td><td><img src="/images/theRock.png" alt="Your basic GlitchRock"></td><td><img src="/images/GlitchRock-glitchy.png" alt="Glitchy GlitchRock"></td></tr></tbody></table><div align="center"><img src="/images/bigLogo.png" alt="Sample Logo Card"></div><br>&nbsp;<br><hr><br><br><strong>ArtStation</strong><br><a href="http://artstation.com" target="_blank" rel="noopener">ArtStation</a> is a site where profession artists post portfolios of their work. There is so much amazing there. I made <a href="https://www.artstation.com/nihiven/collections/362611" target="_blank" rel="noopener">a collection of inspirationl pictures</a> for Vapor Story. These all have some element of asthetic I want. A lot of the artists on this site are available for hire. I need to start saving my pennies.<br><br><div align="center"><img src="https://cdnb.artstation.com/p/assets/images/images/004/547/073/large/jugoslav-stankin-cyberpunkish.jpg?1484493821" alt="New retro wave-ish city"></div><br><div align="center"><img src="https://cdnb.artstation.com/p/assets/images/images/009/644/353/large/daniele-caviglia-scifi-city-post.jpg?1520117039" alt="ｃｉｔｙ_ｓｃｅｎｅ"></div><br><div align="center"><img src="https://cdna.artstation.com/p/assets/images/images/012/389/894/large/eugenio-garcia-villarreal-hh.jpg?1534536864" alt="Cyberpunk 2025"></div><br><div align="center"><img src="https://cdna.artstation.com/p/assets/images/images/007/082/334/large/vera-lee-disgusting.jpg?1503542272" alt="Wild World"></div>]]></content>
+    <content type="html"><![CDATA[<p>I’m working on a logo for GlitchRock Games. I want something that is simple and kind of retro, recognizable, and related to the GlitchRock name in literal way. I like the idea of this simple outline of a rock. The original GlitchRock was taken from a game screenshot, Call of Duty or something like that. The idea of having it glitched out is kind of cool. I can see the simple rock being a good watermark, but as a logo, it’s missing something. Will anyone know what it is unless it’s used in conjuction with the name? Maybe it needs some shading or something.</p><table><thead><tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><img src="/images/TheOriginalGlitchRock.png" alt="OG GlitchRock"></td><td><img src="/images/theRock.png" alt="Your basic GlitchRock"></td><td><img src="/images/GlitchRock-glitchy.png" alt="Glitchy GlitchRock"></td></tr></tbody></table><div align="center"><img src="/images/bigLogo.png" alt="Sample Logo Card"></div><br>&nbsp;<br><hr><br><br><strong>ArtStation</strong><br><a href="http://artstation.com" target="_blank" rel="noopener">ArtStation</a> is a site where profession artists post portfolios of their work. There is so much amazing there. I made <a href="https://www.artstation.com/nihiven/collections/362611" target="_blank" rel="noopener">a collection of inspirationl pictures</a> for Vapor Story. These all have some element of asthetic I want. A lot of the artists on this site are available for hire. I need to start saving my pennies.<br><br><div align="center"><img src="https://cdnb.artstation.com/p/assets/images/images/004/547/073/large/jugoslav-stankin-cyberpunkish.jpg?1484493821" alt="New retro wave-ish city"></div><br><div align="center"><img src="https://cdnb.artstation.com/p/assets/images/images/009/644/353/large/daniele-caviglia-scifi-city-post.jpg?1520117039" alt="ｃｉｔｙ_ｓｃｅｎｅ"></div><br><div align="center"><img src="https://cdna.artstation.com/p/assets/images/images/012/389/894/large/eugenio-garcia-villarreal-hh.jpg?1534536864" alt="Cyberpunk 2025"></div><br><div align="center"><img src="https://cdna.artstation.com/p/assets/images/images/007/082/334/large/vera-lee-disgusting.jpg?1503542272" alt="Wild World"></div>]]></content>
     
     <summary type="html">
     
@@ -357,9 +382,9 @@
       <category term="glitchrock games" scheme="http://nvn.io/categories/glitchrock-games/"/>
     
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -369,7 +394,7 @@
     <title>Nah man, it&#39;s August</title>
     <link href="http://nvn.io/2018/08/17/Nah-man-it-s-August/"/>
     <id>http://nvn.io/2018/08/17/Nah-man-it-s-August/</id>
-    <published>2018-08-17T18:59:05.000Z</published>
+    <published>2018-08-17T21:59:05.000Z</published>
     <updated>2018-08-17T20:15:47.537Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Website</strong><br>I am finally DONE with the site redesign. I’m done writing posts in straight html! This site now runs on <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> and has the basic features of a blog. Categories, tags, archive, history… I’m so happy that’s done. Every time I wanted to write a post, I would think about how I still haven’t made a new page for June posts and then I’d think of HTML and then… no post. This is the first post using the new system! There are still some little bugs to work out and I’ll be doing that in the next couple of days.</p><p><strong>Vapor Story</strong><br>I told myself when I started this game that I wanted to make the game I had in my mind. I would not compromise on some part of the design because it was too hard, or would take too long.  Then when I chose GameMaker, that’s exactly what I was doing. I said to myself that an Unreal based game would be too hard. I didn’t have the experience I needed. It will take forever. Then I started with GameMaker and got far enough along in the design that I realized I just didn’t like what I was making. It really hit home when I started playing through Hyper Light Drifter and I couldn’t get into it. I wasn’t having a good time and it was because the game was 2d. It  was flat. You can’t look out over the land. You can’t see things off in the distance and decide to go to them. I want that for my game. So, I picked up Unreal. I took an introduction course and built some sample levels. It’s been a lot of work, but I think it’s right. I like what I’m making.</p><p>Using Unreal engine means that for now, the game is a first person shooter. That is awesome…!</p>]]></content>
@@ -398,7 +423,7 @@
     <title>Still Alive?</title>
     <link href="http://nvn.io/2018/07/01/Still-Alive/"/>
     <id>http://nvn.io/2018/07/01/Still-Alive/</id>
-    <published>2018-07-01T18:57:47.000Z</published>
+    <published>2018-07-01T21:57:47.000Z</published>
     <updated>2018-08-17T18:58:29.458Z</updated>
     
     <content type="html"><![CDATA[<p>I’m still alive! Game progress is slow, but continues. Vapor Story is coming to life!</p>]]></content>
@@ -422,7 +447,7 @@
     <title>Destiny 2</title>
     <link href="http://nvn.io/2018/05/20/Destiny-2/"/>
     <id>http://nvn.io/2018/05/20/Destiny-2/</id>
-    <published>2018-05-20T18:56:58.000Z</published>
+    <published>2018-05-20T21:56:58.000Z</published>
     <updated>2018-08-17T18:57:30.890Z</updated>
     
     <content type="html"><![CDATA[<p>I just had my birthday! I’ve been playing a lot of Destiny 2 on PC lately. I’m a little bit out of the development loop, but that’s ok. I needed a little break after five straight months. I plan on making a big push this coming weekend. I’ll have some down time and will be in a nice quiet place.</p><p>I’m going to be working on item generation, stats, properties, etc… I want to be able to equip items and have their properties affect the player. I also want to get battle working. SHOOTING stuff. LET’S GO!</p>]]></content>
@@ -447,7 +472,7 @@
     <title>That&#39;s all we&#39;ve done?</title>
     <link href="http://nvn.io/2018/04/27/That-s-all-we-ve-done/"/>
     <id>http://nvn.io/2018/04/27/That-s-all-we-ve-done/</id>
-    <published>2018-04-27T18:56:05.000Z</published>
+    <published>2018-04-27T21:56:05.000Z</published>
     <updated>2018-08-18T17:47:36.660Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>It’s a been an unproductive week at GlitchRock Games. I suffer from anxiety/migraines and neither of them have been very kind to me this week. I’ve lost the whole week to them. I’m working as much as I can today and hopefully will be back at full steam tomorrow. In the last few sessions, I’ve worked on sorting out the inventory, tweaking some things here and there, and making some changes to make it feel a lot like the system from Diablo 3. I’m doing stacking a little differently, but aside from that, it’s very similar.</p><p>I’m going to take a little time to work on character movement now. It feels sluggish and boring. Adding a nice effect to the dash and tweaking the collision code will make it feel a lot more solid and responsive. This will tie in to adding the controller as an input device. Right now, you can only move with the keyboard and mouse. The input system is made up off two layers; input reading and action mapping. The input module reads all available inputs and maps them to a given action, which will eventually be assigned through the Input Configuration menu. An input to action mapping looks something like: action_map[action.attack] = input.mb_left;</p><p>This type of mapping lets me reference the actions in the game code, instead of specific keys. It’s a common technique and allows for user control customization. I’m a big fan of customization and options, so I’m working on exposing as many options as is appropriate.</p><p>ps. I stole the screen shake code that I used in Poopin in Swoopin and made it an object in Vapor Story.</p>]]></content>
@@ -474,7 +499,7 @@
     <title>Poopin&#39; and Swoopin&#39;</title>
     <link href="http://nvn.io/2018/04/23/Poopin-and-Swoopin/"/>
     <id>http://nvn.io/2018/04/23/Poopin-and-Swoopin/</id>
-    <published>2018-04-23T18:52:23.000Z</published>
+    <published>2018-04-23T21:52:23.000Z</published>
     <updated>2018-08-17T18:55:19.035Z</updated>
     
     <content type="html"><![CDATA[<p>I took a little break from Vapor Story this weekend to work on a game for <a href="https://ldjam.com/events/ludum-dare/41" target="_blank" rel="noopener">Ludum Dare 41</a>. The theme was ‘combine two incompatible genres’ and my game was a castle defense + farming sim, called Swoopin and Poopin. I code  pretty slowly, so I didn’t get finished, but I plan to work on it when I need a break from VS.</p><div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/VL3B-D_u7aA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>]]></content>
@@ -491,9 +516,9 @@
       <category term="game jam" scheme="http://nvn.io/categories/game-jam/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
       <category term="ludum dare" scheme="http://nvn.io/tags/ludum-dare/"/>
     
@@ -503,7 +528,7 @@
     <title>Friday the 13th</title>
     <link href="http://nvn.io/2018/04/13/Friday-the-13th/"/>
     <id>http://nvn.io/2018/04/13/Friday-the-13th/</id>
-    <published>2018-04-13T18:50:12.000Z</published>
+    <published>2018-04-13T21:50:12.000Z</published>
     <updated>2018-08-18T17:46:01.011Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Notes</strong><br>I’ve gotten the inventory working somewhat. There is a video of that down below. There is also a world clock, which is used to cycle day night coloring. It’s just a simple overlay now, I’m not even sure the game will have day and night.</p><div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/7ni2n/uuejom" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div><br><div align="center"><img src="/images/jv.gif" alt="YES!"></div>]]></content>
@@ -520,46 +545,13 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
       <category term="holiday" scheme="http://nvn.io/tags/holiday/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Spaghetti Code</title>
-    <link href="http://nvn.io/2018/04/08/Spaghetti-Code/"/>
-    <id>http://nvn.io/2018/04/08/Spaghetti-Code/</id>
-    <published>2018-04-08T18:46:28.000Z</published>
-    <updated>2018-08-18T17:49:58.027Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Techinical Design</strong><br>This weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just kind of throwing code all over the place. Some of it is getting a bit wild and is all over the place. I’m taking some time to reel those parts in, as well as correcting and expanding on some things;<br>naming of variables and scripts, including tree locations</p><ul><li>collision: this hasn’t worked correctly since I changed the main character sprite</li><li>data structure: I am making objects for each item and that’s not working out. I’m going to set up an item index and build objects based on the index data instead of building the data into the objects. I’ll have to think about how code works for unqiue items.</li><li>animation: it’s working ok as is. It needs a little more flexibility for layering items on top of each other. I want to setup parts for characters (head, torso, legs, etc…) and be able to assign items to those parts.</li><li>drawing: I need to make a system to control drawing order. The sprites are drawn in whatever order Game Maker draws them in. This leads to some items being drawn on top of things they shouldn’t be. I need keep a depth order and draw based on that.</li></ul><p>I’m not going to beat myself up over these thinsg, I’ll look at it as learning the ropes of Game Maker. Also, I’m pretty happy with the way input is handled and abstracted. The extra time spent on that will allow for custom input mapping and it’s easy to use in code.</p><p><strong>Game Design</strong><br>I’m playing through Breath of the Wild on Master Mode. There are times when I’m totally ignoring the story or any quest and I just go around in my stealth gear collecting beetles. This is the kind of activity I want to have in my game. Something that is fun and beneficial to the player, despite being totally optional. I would love for the players to be able to take pictures, or something with a similar purpose (tagging different game objects). I’m thinking about that a lot.</p><p>The story is still a work in progress. I aim for it to be something that can stand alone and be enjoyable on its own. I like it a lot so far.</p><p>This is a picture of the inventory window. The dark gray slots are disabled and can be unlocked through perks or experience.<br><img src="/images/180408-Inventory.png" alt="Inventory Window"></p><p>ps. <a href="https://www.gamasutra.com/view/feature/134949/learning_from_the_masters_level_.php" target="_blank" rel="noopener">This article on The Legend of Zelda level design</a> is pretty good!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;Techinical Design&lt;/strong&gt;&lt;br&gt;This weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just k
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
+      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
     
       <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
     
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
       <category term="video" scheme="http://nvn.io/tags/video/"/>
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
-    
-      <category term="botw" scheme="http://nvn.io/tags/botw/"/>
     
   </entry>
   
