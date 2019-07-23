@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-07-23T02:34:41.103Z</updated>
+  <updated>2019-07-23T02:40:45.825Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://nvn.io/2019/07/22/Title-in-Pixels/"/>
     <id>http://nvn.io/2019/07/22/Title-in-Pixels/</id>
     <published>2019-07-23T02:27:31.000Z</published>
-    <updated>2019-07-23T02:34:41.103Z</updated>
+    <updated>2019-07-23T02:40:45.825Z</updated>
     
-    <content type="html"><![CDATA[<p><em>Title Splash</em></p><p>This is a static mock of the Pastel Future title screen. I’m itching to get a day time or sunset version of this.</p><center><img src="/images/Pastel_Future_2560x1080.jpg" alt="Pastel Future" title="Pastel Future"></center><p><em>Various Formats</em></p><ul><li><a href="/images/Pastel_Future_2560x1080.png">2560x1920 PNG</a></li><li><a href="/images/Pastel_Future_2560x1080.jpg">2560x1920 JPG</a></li><li><a href="/images/Pastel_Future_3440x1440.png">3440x1440 PNG</a></li><li><a href="/images/Pastel_Future_3440x1440.jpg">3440x1440 JPG</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><em>Title Splash</em></p><p>This is a static mock of the Pastel Future title screen. I’m itching to get a day time or sunset version of this.</p><center><img src="/images/Pastel_Future_2560x1080.jpg" alt="Pastel Future" title="Pastel Future"></center><p><em>Various Formats</em></p><ul><li><a href="/img/Pastel_Future_2560x1080.png">2560x1920 PNG</a></li><li><a href="/img/Pastel_Future_2560x1080.jpg">2560x1920 JPG</a></li><li><a href="/img/Pastel_Future_3440x1440.png">3440x1440 PNG</a></li><li><a href="/img/Pastel_Future_3440x1440.jpg">3440x1440 JPG</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -47,9 +47,9 @@
     <link href="http://nvn.io/2019/07/14/Things-Coming-into-Focus/"/>
     <id>http://nvn.io/2019/07/14/Things-Coming-into-Focus/</id>
     <published>2019-07-15T02:44:02.000Z</published>
-    <updated>2019-07-15T02:58:11.149Z</updated>
+    <updated>2019-07-23T02:39:33.555Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Here’s an Update</strong><br>I’ve been working on Pastel Future’s story and mechanics a lot more than I have its code. Hey, that’s good. Everyone always says you should have a design before you start coding. I’ve hammered out the story and the way the story ties in to the gameplay mechanics. I’m very happy with where that is.</p><p><strong>On Mechanics</strong><br>Pastel Future is an action RPG with a little Sim City and StarCraft mixed in. You will build and army and command troops to accomplish goals that Pastel could not do alone. It sounds good on paper, we’ll see how it goes when I’m able to test it.</p><p>I am still struggling with how far to go with replayability. Diablo 3’s greater rifts give you endless replayability. Is there a solution for Pastel Future that achieves that goal? Is that even a goal? I’m not settled on this yet.</p><p><strong>GlitchRock Games</strong><br>We have a new logo which represents; time, space, and b0x. Look for a clock, cube, and an isometric view of an empty room.</p><p><img src="/images/grg/grg_logo_color.png" alt="GlitchRock Games" title="GlitchRock Games"></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Here’s an Update</strong><br>I’ve been working on Pastel Future’s story and mechanics a lot more than I have its code. Hey, that’s good. Everyone always says you should have a design before you start coding. I’ve hammered out the story and the way the story ties in to the gameplay mechanics. I’m very happy with where that is.</p><p><strong>On Mechanics</strong><br>Pastel Future is an action RPG with a little Sim City and StarCraft mixed in. You will build and army and command troops to accomplish goals that Pastel could not do alone. It sounds good on paper, we’ll see how it goes when I’m able to test it.</p><p>I am still struggling with how far to go with replayability. Diablo 3’s greater rifts give you endless replayability. Is there a solution for Pastel Future that achieves that goal? Is that even a goal? I’m not settled on this yet.</p><p><strong>GlitchRock Games</strong><br>We have a new logo which represents; time, space, and b0x. Look for a clock, cube, and an isometric view of an empty room.</p><div align="center"><img src="/images/grg/grg_logo_color.png" alt="GlitchRock Games" title="GlitchRock Games"></div>]]></content>
     
     <summary type="html">
     
