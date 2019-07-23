@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-07-15T02:58:11.149Z</updated>
+  <updated>2019-07-23T02:34:41.103Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Title in Pixels</title>
+    <link href="http://nvn.io/2019/07/22/Title-in-Pixels/"/>
+    <id>http://nvn.io/2019/07/22/Title-in-Pixels/</id>
+    <published>2019-07-23T02:27:31.000Z</published>
+    <updated>2019-07-23T02:34:41.103Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>Title Splash</em></p><p>This is a static mock of the Pastel Future title screen. I’m itching to get a day time or sunset version of this.</p><center><img src="/images/Pastel_Future_2560x1080.jpg" alt="Pastel Future" title="Pastel Future"></center><p><em>Various Formats</em></p><ul><li><a href="/images/Pastel_Future_2560x1080.png">2560x1920 PNG</a></li><li><a href="/images/Pastel_Future_2560x1080.jpg">2560x1920 JPG</a></li><li><a href="/images/Pastel_Future_3440x1440.png">3440x1440 PNG</a></li><li><a href="/images/Pastel_Future_3440x1440.jpg">3440x1440 JPG</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;em&gt;Title Splash&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is a static mock of the Pastel Future title screen. I’m itching to get a day time or sunset version of 
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
+    
+  </entry>
   
   <entry>
     <title>Things Coming into Focus</title>
@@ -515,35 +541,6 @@
       <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="irl" scheme="http://nvn.io/tags/irl/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Poopin&#39; and Swoopin&#39;</title>
-    <link href="http://nvn.io/2018/04/23/Poopin-and-Swoopin/"/>
-    <id>http://nvn.io/2018/04/23/Poopin-and-Swoopin/</id>
-    <published>2018-04-23T18:52:23.000Z</published>
-    <updated>2018-08-17T18:55:19.035Z</updated>
-    
-    <content type="html"><![CDATA[<p>I took a little break from Vapor Story this weekend to work on a game for <a href="https://ldjam.com/events/ludum-dare/41" target="_blank" rel="noopener">Ludum Dare 41</a>. The theme was ‘combine two incompatible genres’ and my game was a castle defense + farming sim, called Swoopin and Poopin. I code  pretty slowly, so I didn’t get finished, but I plan to work on it when I need a break from VS.</p><div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/VL3B-D_u7aA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;I took a little break from Vapor Story this weekend to work on a game for &lt;a href=&quot;https://ldjam.com/events/ludum-dare/41&quot; target=&quot;_blank
-      
-    
-    </summary>
-    
-      <category term="game jam" scheme="http://nvn.io/categories/game-jam/"/>
-    
-    
-      <category term="engine" scheme="http://nvn.io/tags/engine/"/>
-    
-      <category term="gamemaker" scheme="http://nvn.io/tags/gamemaker/"/>
-    
-      <category term="ludum dare" scheme="http://nvn.io/tags/ludum-dare/"/>
     
   </entry>
   
