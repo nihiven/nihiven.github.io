@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nvn.io/"/>
-  <updated>2019-07-23T02:42:17.080Z</updated>
+  <updated>2019-09-29T04:47:42.112Z</updated>
   <id>http://nvn.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The Fall</title>
+    <link href="http://nvn.io/2019/09/29/The-Fall/"/>
+    <id>http://nvn.io/2019/09/29/The-Fall/</id>
+    <published>2019-09-29T04:11:09.000Z</published>
+    <updated>2019-09-29T04:47:42.112Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>State of the Union</strong></p><ul><li>Gameplay, Player movement: It’s stable, but rough… functional and everything, it just feels very basic. There are some obvious enhancements to make.</li><li>Gameplay, Enemy AI: The enemies can track you and navigate around the map. They’ll avoid obstacles and can be set to patrol given paths. I plan to allow them to share info and position themselve as a group.</li><li>Loot, Functionality: There isn’t that much loot in the game right now. There is a ton of it designed and sitting in OneNote. I’m in the middle of making item affixes do what they say they will, such as increasing rate of fire or applying buffs.</li><li>Loot, Tiers: One of the proposed tiers is <strong>Mythic</strong>. Items in this tier are earned through specific, repeatable actions. These are akin to Destiny exotics or Borderlands legendaries. There are mythic tier items in every category. I haven’t finished defining the actions to receive each piece of mythic gear. There’s still a long way to go with gear quests and lore.</li><li>Art: I haven’t been working on art at all. I had the title screen mock up done and haven’t looked at art since. I’ve known for a long time what I want the game to look like. The next step is finding the person to turn my ideas into someting we can put on the screen!</li><li>Sound, Foley: I’ve been using sounds from Destiny 2. They’re wonderful! I’m not looking forward to replacing them.</li><li>Sound, Music: Much like art, I haven’t done anything with PF’s music. I’m not sure what kind of music I want. How about M83 let’s me use DSVII and we’ll call it a day!</li><li>Story: There have been so many changes to the story that it’s hard to keep straight. The idea that Pastel has come back to Earth to prepare it for the return of the Earthlings has gone through some changes. I’m not sure PF takes place on Earth. I have solidified the antaonists and their motivations, that was a big step.</li></ul><p><strong>Next Steps</strong><br>I’m ready to give myself a deadline to aim for. The plan is to have a playable (what’s before alpha??) version of the game by the end of the year. This is the version of the game that I will use to shop for musicians and artists. I’m going to do weekly updates on this site. Next week, I’ll post my progress on the official To Do list. </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;State of the Union&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gameplay, Player movement: It’s stable, but rough… functional and everything, it just fe
+      
+    
+    </summary>
+    
+      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Title in Pixels</title>
@@ -377,9 +402,9 @@
       <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
     
     
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -431,9 +456,9 @@
       <category term="glitchrock games" scheme="http://nvn.io/categories/glitchrock-games/"/>
     
     
-      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
-    
       <category term="engine" scheme="http://nvn.io/tags/engine/"/>
+    
+      <category term="art design" scheme="http://nvn.io/tags/art-design/"/>
     
       <category term="unreal" scheme="http://nvn.io/tags/unreal/"/>
     
@@ -514,33 +539,6 @@
     
     
       <category term="destiny" scheme="http://nvn.io/tags/destiny/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>That&#39;s all we&#39;ve done?</title>
-    <link href="http://nvn.io/2018/04/27/That-s-all-we-ve-done/"/>
-    <id>http://nvn.io/2018/04/27/That-s-all-we-ve-done/</id>
-    <published>2018-04-27T18:56:05.000Z</published>
-    <updated>2018-08-18T17:47:36.660Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Technical Design</strong><br>It’s a been an unproductive week at GlitchRock Games. I suffer from anxiety/migraines and neither of them have been very kind to me this week. I’ve lost the whole week to them. I’m working as much as I can today and hopefully will be back at full steam tomorrow. In the last few sessions, I’ve worked on sorting out the inventory, tweaking some things here and there, and making some changes to make it feel a lot like the system from Diablo 3. I’m doing stacking a little differently, but aside from that, it’s very similar.</p><p>I’m going to take a little time to work on character movement now. It feels sluggish and boring. Adding a nice effect to the dash and tweaking the collision code will make it feel a lot more solid and responsive. This will tie in to adding the controller as an input device. Right now, you can only move with the keyboard and mouse. The input system is made up off two layers; input reading and action mapping. The input module reads all available inputs and maps them to a given action, which will eventually be assigned through the Input Configuration menu. An input to action mapping looks something like: action_map[action.attack] = input.mb_left;</p><p>This type of mapping lets me reference the actions in the game code, instead of specific keys. It’s a common technique and allows for user control customization. I’m a big fan of customization and options, so I’m working on exposing as many options as is appropriate.</p><p>ps. I stole the screen shake code that I used in Poopin in Swoopin and made it an object in Vapor Story.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;Technical Design&lt;/strong&gt;&lt;br&gt;It’s a been an unproductive week at GlitchRock Games. I suffer from anxiety/migraines and neither of
-      
-    
-    </summary>
-    
-      <category term="vapor game" scheme="http://nvn.io/categories/vapor-game/"/>
-    
-    
-      <category term="tech design" scheme="http://nvn.io/tags/tech-design/"/>
-    
-      <category term="irl" scheme="http://nvn.io/tags/irl/"/>
     
   </entry>
   
