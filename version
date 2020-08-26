@@ -1,0 +1,15 @@
+{
+  "homepage": "http://minecraft.nvn.io",
+  "<mcversion>": {
+    "0.0.2": "Added some cool shit!", 
+    "0.0.1": "Birth of a mod.", 
+  },
+  ...
+  "promos": {
+    "0.0.3-latest": "0.0.3",
+    // Declare the latest "bleeding-edge" version of your mod for the given Minecraft version
+    "0.0.2-recommended": "0.0.2",
+    // Declare the latest "stable" version of your mod for the given Minecraft version
+    "0.0.2-stable": "0.0.2",
+  }
+}
