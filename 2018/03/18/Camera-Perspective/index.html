@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-62662107-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>Camera Perspective | Pastel Future</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Technical DesignHoly hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Maker works and what’s possible. I did something with the background sky that’s been beh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Camera Perspective">
+<meta property="og:url" content="http://nvn.io/2018/03/18/Camera-Perspective/index.html">
+<meta property="og:site_name" content="Pastel Future">
+<meta property="og:description" content="Technical DesignHoly hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Maker works and what’s possible. I did something with the background sky that’s been beh">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://nvn.io/images/botwLowCamera.jpg">
+<meta property="og:image" content="http://nvn.io/images/botwMedCamera.png">
+<meta property="og:image" content="http://nvn.io/images/botwHighCamera.png">
+<meta property="og:updated_time" content="2018-08-18T17:48:27.904Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Camera Perspective">
+<meta name="twitter:description" content="Technical DesignHoly hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Maker works and what’s possible. I did something with the background sky that’s been beh">
+<meta name="twitter:image" content="http://nvn.io/images/botwLowCamera.jpg">
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;GlitchRockGames">
+  
+  
+    <link rel="icon" href="https://nvn.io/images/grg/grg_fav_icon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="http://nvn.io">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-twitter-link" class="nav-icon" href="https://twitter.com/GlitchRockGames" title="@GlitchRockGames"></a>
+        
+        
+          <a id="nav-insta-link" class="nav-icon" href="https://www.instagram.com/glitchrockgames/" title="GlitchRock Games on Instagram"></a>
+        
+        
+          <a id="nav-github-link" class="nav-icon" href="https://github.com/nihiven/" title="nihiven on github"></a>
+        
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Camera-Perspective" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/18/Camera-Perspective/" class="article-date">
+  <time datetime="2018-03-18T18:03:51.000Z" itemprop="datePublished">2018-03-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Camera Perspective
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Technical Design</strong><br>Holy hell, March is half over! I’m picking at things, trying this, that… mostly to see how Game Maker works and what’s possible. I did something with the background sky that’s been behind the buildings in many of the videos below, replacing it with a shader instead of a texture. It works really well. If the shader was some type of cloudy sky, it would look a lot like the sky in Breath of the Wild, which is definitely a dynamic shader. Something a lot like this…</p>
+<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/Mtd3W7?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+<p><strong>Game Design</strong><br>One of the problems I’m having is how to handle the camera perspective. Think of a first or third person game, when the camera is low to the ground and you can see off into the distance. When the camera is high, you are above the player, staring down at the ground. These pictures illustrate the difference. These are all pictures of the same scene, with only the camera’s height changing.</p>
+<table>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/botwLowCamera.jpg" alt="Directly Behind"></td>
+<td><img src="/images/botwMedCamera.png" alt="Behind High"></td>
+<td><img src="/images/botwHighCamera.png" alt="Overhead"></td>
+</tr>
+</tbody>
+</table>
+<p>In my opinion, the first one looks the best and the third the worst. My game is a top down game, which is a lot like the third picture. My dilemma is: How do I make something that looks more like the first picture, than it does the third? The awesome feeling that I get from being able to stand atop a big mountain and look out over the landscape can’t be overstated. I don’t know that it’s possible to replicate that feeling in a 2d world though. In an attempt to replicate the low camera look, you can zoom out, which will increase the field of view. This relieves some of the claustraphobic feeling from the third picture. If that view was zoomed out, allowing you to see the sorroundings, it would be a little more playable. I tried this with my protoype and zoomed the camera out around 100%. It gives a much larger field of view and feels a little more substantial, which you can see in the video below.</p>
+<div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/3sotf/doaahy" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+
+<p>I’m going to keep experimenting. I’ll check out some other games to see how they handle it, as I’m sure someone already has a great solution.</p>
+
+      
+      &nbsp;
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nvn.io/2018/03/18/Camera-Perspective/" data-id="ck14kfs2t0007doa9wyeabwxe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/03/26/Item-Popups/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Item Popups
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/03/15/Shader-Work/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Shader Work</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/29/The-Fall/">The Fall</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/22/Title-in-Pixels/">Title in Pixels</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/14/Things-Coming-into-Focus/">Things Coming into Focus</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/24/It-s-A-Process/">It&#39;s A Process</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/09/Stats-Management/">Stats Management</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">13</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 <a href="http://twitter.com/GlitchRockGames/" target="_blank">GlitchRock Games</a> | Come for the story, stay for the loot.
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="http://nvn.io" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
