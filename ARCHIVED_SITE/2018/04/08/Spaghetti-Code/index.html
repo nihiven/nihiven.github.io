@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-62662107-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>Spaghetti Code | Pastel Future</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Techinical DesignThis weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just kind of throwing code all over the place. Some of it is getting a bit wild and is all">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spaghetti Code">
+<meta property="og:url" content="http://nvn.io/2018/04/08/Spaghetti-Code/index.html">
+<meta property="og:site_name" content="Pastel Future">
+<meta property="og:description" content="Techinical DesignThis weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just kind of throwing code all over the place. Some of it is getting a bit wild and is all">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://nvn.io/images/180408-Inventory.png">
+<meta property="og:updated_time" content="2018-08-18T17:49:58.027Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Spaghetti Code">
+<meta name="twitter:description" content="Techinical DesignThis weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just kind of throwing code all over the place. Some of it is getting a bit wild and is all">
+<meta name="twitter:image" content="http://nvn.io/images/180408-Inventory.png">
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;GlitchRockGames">
+  
+  
+    <link rel="icon" href="https://nvn.io/images/grg/grg_fav_icon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="http://nvn.io">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-twitter-link" class="nav-icon" href="https://twitter.com/GlitchRockGames" title="@GlitchRockGames"></a>
+        
+        
+          <a id="nav-insta-link" class="nav-icon" href="https://www.instagram.com/glitchrockgames/" title="GlitchRock Games on Instagram"></a>
+        
+        
+          <a id="nav-github-link" class="nav-icon" href="https://github.com/nihiven/" title="nihiven on github"></a>
+        
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Spaghetti-Code" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/08/Spaghetti-Code/" class="article-date">
+  <time datetime="2018-04-08T18:46:28.000Z" itemprop="datePublished">2018-04-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Spaghetti Code
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Techinical Design</strong><br>This weekend has been great as far as progress is concerned. Although, I’ve noticed that I’m just kind of throwing code all over the place. Some of it is getting a bit wild and is all over the place. I’m taking some time to reel those parts in, as well as correcting and expanding on some things;<br>naming of variables and scripts, including tree locations</p>
+<ul>
+<li>collision: this hasn’t worked correctly since I changed the main character sprite</li>
+<li>data structure: I am making objects for each item and that’s not working out. I’m going to set up an item index and build objects based on the index data instead of building the data into the objects. I’ll have to think about how code works for unqiue items.</li>
+<li>animation: it’s working ok as is. It needs a little more flexibility for layering items on top of each other. I want to setup parts for characters (head, torso, legs, etc…) and be able to assign items to those parts.</li>
+<li>drawing: I need to make a system to control drawing order. The sprites are drawn in whatever order Game Maker draws them in. This leads to some items being drawn on top of things they shouldn’t be. I need keep a depth order and draw based on that.</li>
+</ul>
+<p>I’m not going to beat myself up over these thinsg, I’ll look at it as learning the ropes of Game Maker. Also, I’m pretty happy with the way input is handled and abstracted. The extra time spent on that will allow for custom input mapping and it’s easy to use in code.</p>
+<p><strong>Game Design</strong><br>I’m playing through Breath of the Wild on Master Mode. There are times when I’m totally ignoring the story or any quest and I just go around in my stealth gear collecting beetles. This is the kind of activity I want to have in my game. Something that is fun and beneficial to the player, despite being totally optional. I would love for the players to be able to take pictures, or something with a similar purpose (tagging different game objects). I’m thinking about that a lot.</p>
+<p>The story is still a work in progress. I aim for it to be something that can stand alone and be enjoyable on its own. I like it a lot so far.</p>
+<p>This is a picture of the inventory window. The dark gray slots are disabled and can be unlocked through perks or experience.<br><img src="/images/180408-Inventory.png" alt="Inventory Window"></p>
+<p>ps. <a href="https://www.gamasutra.com/view/feature/134949/learning_from_the_masters_level_.php" target="_blank" rel="noopener">This article on The Legend of Zelda level design</a> is pretty good!</p>
+
+      
+      &nbsp;
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nvn.io/2018/04/08/Spaghetti-Code/" data-id="ck14kfs3j0018doa9z31fl91k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/04/13/Friday-the-13th/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Friday the 13th
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/04/03/Inventory-Popup/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Inventory Popup</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/29/The-Fall/">The Fall</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/22/Title-in-Pixels/">Title in Pixels</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/14/Things-Coming-into-Focus/">Things Coming into Focus</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/24/It-s-A-Process/">It&#39;s A Process</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/09/Stats-Management/">Stats Management</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">13</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 <a href="http://twitter.com/GlitchRockGames/" target="_blank">GlitchRock Games</a> | Come for the story, stay for the loot.
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="http://nvn.io" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
