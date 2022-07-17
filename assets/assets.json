@@ -1,0 +1,60 @@
+{"frames": {
+
+"neopf.png":
+{
+	"frame": {"x":113,"y":0,"w":70,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":73},
+	"sourceSize": {"w":70,"h":73},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"neopf_beef.png":
+{
+	"frame": {"x":0,"y":73,"w":878,"h":941},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":878,"h":941},
+	"sourceSize": {"w":878,"h":941},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"neopf_smol.png":
+{
+	"frame": {"x":62,"y":0,"w":51,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":56},
+	"sourceSize": {"w":51,"h":56},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"thatguy_1.png":
+{
+	"frame": {"x":0,"y":0,"w":31,"h":40},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":40},
+	"sourceSize": {"w":31,"h":40},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"thatguy_2.png":
+{
+	"frame": {"x":31,"y":0,"w":31,"h":40},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":40},
+	"sourceSize": {"w":31,"h":40},
+	"anchor": {"x":0.5,"y":0.5}
+}},
+"animations": {
+	"thatguy": ["thatguy_1.png","thatguy_2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "assets.png",
+	"format": "RGBA8888",
+	"size": {"w":878,"h":1014},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2722703ac4621f386522d6f06be2172d:3c944fd74f1af3ee5f6201eee0e09f48:a759b6bbc8381ac9c472b28f589ad0d6$"
+}
+}
